@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "reported_trajectories": 96,
+  "models": [
+    "gpt-6.1-sol",
+    "claude-opus-5-5"
+  ],
+  "years": [
+    2023,
+    2030,
+    2035
+  ],
+  "regions": [
+    "miso",
+    "ercot",
+    "nyiso",
+    "south_africa",
+    "australia",
+    "new_zealand",
+    "mexico",
+    "brazil"
+  ],
+  "architectures": [
+    "single",
+    "multi"
+  ],
+  "selection_policy": "lowest_cost_physically_accepted_committed_design",
+  "source_snapshots": {
+    "evidence/base2023_20261005/results.json": {
+      "sha256": "2895a1d69014ef644b6a90a9235361bd60e5cbc6382e23c56edee4061c970078"
+    },
+    "evidence/completed_weather_20261003/results.json": {
+      "sha256": "1d5faf1a04499962b40f2fc6ec1792d4384057891baba1c4b26046f4eab4952a"
+    },
+    "evidence/reported96_20261006/results.json": {
+      "sha256": "c94485c2c66f2c54dabf1f29bf610ddb351356457222c79cf9e522730e7ffb4c"
+    }
+  },
+  "expected_recorded_totals": {
+    "committed_assessments": 382,
+    "system_simulation_requests": 369,
+    "feeder_only_assessments": 13,
+    "rejected_assessments": 75,
+    "uncommitted_system_probes": 228,
+    "unique_received_responses": 2257,
+    "input_tokens": 276386026,
+    "output_tokens": 3834189
+  },
+  "scope_note": "Hashes identify historical manuscript snapshots; relocated and sanitized rebuilds can have different byte hashes. Scientific values must be verified against raw sources. No results or journals are bundled."
+}

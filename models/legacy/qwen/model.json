@@ -1,0 +1,32 @@
+{
+  "model": "Qwen/Qwen3.8-27B-FP8",
+  "revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+  "served_model_name": "grid-qwen38-27b-fp8-1m",
+  "backend": "vllm-chat",
+  "vllm_version": "0.29.0",
+  "context_tokens": 1000000,
+  "output_tokens": 32000,
+  "historical_south_africa_multi_resumed_output_tokens": 64000,
+  "generation": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repetition_penalty": 1.0,
+    "enable_thinking": true,
+    "preserve_thinking": true
+  },
+  "hf_overrides": {
+    "text_config": {
+      "rope_parameters": {
+        "mrope_interleaved": true,
+        "mrope_section": [11, 11, 10],
+        "rope_type": "yarn",
+        "rope_theta": 10000000,
+        "partial_rotary_factor": 0.25,
+        "factor": 4.0,
+        "original_max_position_embeddings": 262144
+      }
+    }
+  }
+}

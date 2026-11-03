@@ -1,0 +1,1638 @@
+{
+  "schema_version": 2,
+  "prepared_date": "2026-11-03",
+  "scope": "40 carbon-constrained trajectories and the 96-trajectory loose-cap reference cohort; Qwen is archival only.",
+  "description": "Research source identities and current release hashes. Byte-identical copies and portable adaptations are distinguished. New wrappers, tests and metadata are covered by RELEASE_FILES.json.",
+  "excluded": "Datasets, completed results, journals, credentials, weights and environments.",
+  "source_root": "Research project root; session-2030-2035 references the preparation session workspace.",
+  "qwen_archive_sha256": "79288c9d2d3359557526cf1ca9ab7ef2b16c6d87658716544b11466af866ccf8",
+  "files": [
+    {
+      "path": "analysis/analyze_rounds.py",
+      "source": "session-2030-2035/work/round_analysis/analyze_rounds.py",
+      "source_sha256": "cf54d9ab976bb84002bdd853c02890bf4b53f530552e6f7e0effde2d51aad1e0",
+      "adaptation": "Original 96-case candidate replay and native round/turn reconstruction; external roots/prefix remapping and full cohort gate.",
+      "sha256": "5566f43e571faa7078e4891df40fd72bb3a18e1f5e0f4202ad9add8b0f7e3a07",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/build_main_results.py",
+      "source": "Nature_Energy/build_main_results.py",
+      "source_sha256": "a2983efc6e5aa4a10309adbdc1f9fb60d27bcbdb0faef9a96d7d92e49f33342b",
+      "adaptation": "Preserved complete main table and coverage gate; explicit external result snapshot and outside-source output directory; full cohort validation.",
+      "sha256": "0bd49de99cb8904c97a5a3dcf3a2bb0f34db1b8dbca4e5432633176505c7fdd1",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/build_search_effort.py",
+      "source": "Nature_Energy/build_search_effort.py",
+      "source_sha256": "200cd3e61eca77bcf1900fc9931d985cd486bd5253647cbcf008fc425d87af79",
+      "adaptation": "Preserved exact manuscript token and assessment totals as strict regression checks; token-only outputs; external evidence/output CLI.",
+      "sha256": "aca316574929b779145017c085d29f78e4a4b0685f030bada0eb393cfe04dc60",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/build_weather_results.py",
+      "source": "Nature_Energy/build_weather_results.py",
+      "source_sha256": "1f588c0698037e0b52f6a1a83f032aa9e490da892cf48717a51e1014c27788a6",
+      "adaptation": "Kept hosted80 replay, acceptance, input/code/settings equality and ledger completeness audit. Added archive prefix remapping and CLI roots; provider monetary fields omitted; fixed render-only evidence hash path; source unchanged checks.",
+      "sha256": "3bc49599bb519ba63d24f3eca387a7b10267339df3f28aac73eb68fe501fc16d",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/committed_evidence.py",
+      "source": "Nature_Energy/committed_evidence.py",
+      "source_sha256": "9fbf2e7c37c811705566b44adb44b7152fe8cd31d0933f203dfe65e835275311",
+      "sha256": "9fbf2e7c37c811705566b44adb44b7152fe8cd31d0933f203dfe65e835275311",
+      "unchanged": true
+    },
+    {
+      "path": "analysis/manuscript/build_expert_comparison.py",
+      "source": "Nature_Energy/build_expert_comparison.py",
+      "source_sha256": "62984343e78c99395063cf0b7b3d2dd85edd6f77f9bfd99468e5865ba6a0576a",
+      "adaptation": "Preserved original paper figure/expert calculations and artwork; source imports separated from explicit external manuscript workspace and archive path mapping.",
+      "sha256": "884d13fd9d0e72c752090b344747810f3ac58cde32e02901ccd7a0eb269c6a45",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/build_figures.py",
+      "source": "Nature_Energy/build_figures.py",
+      "source_sha256": "a6822253e7fa18081e4ae72a5424e5f61f3a15c03bdd62b71ae8b5bf654988c2",
+      "adaptation": "Preserved original paper figure/expert calculations and artwork; source imports separated from explicit external manuscript workspace and archive path mapping.",
+      "sha256": "b93dd8e84881aeb9eba84bac0d56a1a5e902dd03156524a0148ece5787b39593",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/build_framework_artwork.py",
+      "source": "Nature_Energy/build_framework_artwork.py",
+      "source_sha256": "b216ee940380df83236bf9e0d3de6a2f6fa2081a60a272b170470a2f77855654",
+      "adaptation": "Portable export commands and separated source/workspace; exact original native authoring dependency is externally required.",
+      "sha256": "ae0f8f58610d13d9b6fd2d22e1ee5cfe62ebf16ee326f4840434a6dc28c2a846",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/build_framework_ppt.mjs",
+      "source": "Nature_Energy/build_framework_ppt.mjs",
+      "source_sha256": "50504aff01c6bbf46d404d3c67edcc6e22809f3c2188b3ffb7357b6ff031008a",
+      "adaptation": "Preserved native editable Figure 1 authoring; dependency paths configured externally; artifact-tool and validation tools are not vendored.",
+      "sha256": "fd4dbdf5e8b604529a73f54527d18dae802e62b154d887a56ab7b0dd1d632732",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/build_geographic_figures.py",
+      "source": "Nature_Energy/build_geographic_figures.py",
+      "source_sha256": "16106d7366d990f67880df92c4b12488d74c64a9fb363bd097580c055d08a2f4",
+      "adaptation": "Preserved original paper figure/expert calculations and artwork; source imports separated from explicit external manuscript workspace and archive path mapping.",
+      "sha256": "bdf3c15bfcc75dc4a455cf3af546e297b9f1febe727c3712f3acca6f9877eacb",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/build_professional_artwork.py",
+      "source": "Nature_Energy/build_professional_artwork.py",
+      "source_sha256": "76a99633167987fe6312c9d7b393cf1bee9ab72b8901660b6ddfbfb40eb66f9b",
+      "adaptation": "Preserved original paper figure/expert calculations and artwork; source imports separated from explicit external manuscript workspace and archive path mapping.",
+      "sha256": "2e41d1daef667f31e5a1127387a368d2fa59e6cc86ef1ee9887116ff735bc6a7",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/build_publication_figures.py",
+      "source": "Nature_Energy/build_publication_figures.py",
+      "source_sha256": "ce55ab7efeff88497d1c797e88a1e63b97131f8001ed34426128ab4e00a74ef7",
+      "adaptation": "Preserved original paper figure/expert calculations and artwork; source imports separated from explicit external manuscript workspace and archive path mapping.",
+      "sha256": "0f4fa3860917c4a89f217e05565e857159905a0cea9aeaf021823e596fda0858",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/extract_best_regional_designs.py",
+      "source": "Nature_Energy/extract_best_regional_designs.py",
+      "source_sha256": "52722dbc1ddf73fbbb15e1ed215a2af3669d96741f0b779dd7a48d5df8c0803f",
+      "adaptation": "Preserved original paper figure/expert calculations and artwork; source imports separated from explicit external manuscript workspace and archive path mapping.",
+      "sha256": "f43b954ce097fdbc2a7575bdb79c31d50d5b00496583e60300156662d204d8c7",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/manuscript/prepare_framework_geometry.py",
+      "source": "Nature_Energy/prepare_framework_geometry.py",
+      "source_sha256": "e147c2ebddb624871fa69be9714f102136320eb6052dd4e0f5280ea01565ed96",
+      "adaptation": "Preserved original paper figure/expert calculations and artwork; source imports separated from explicit external manuscript workspace and archive path mapping.",
+      "sha256": "84aea3fab9a4379833ba7ada5e9bcbcb8976406109d4ff8617a162ffd6be2dc4",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/render_results_tables.py",
+      "source": "Nature_Energy/render_results_tables.py",
+      "source_sha256": "f4854492ec1a941f16015582fd4d69b1a0a66904861035892aae80ebc19c6ae9",
+      "adaptation": "Preserved Opus baseline tables; external evidence/output CLI defaults.",
+      "sha256": "8049f0a5b915487f206dfbd958dd4bfdb3daa0417aa5ba387c6b924485228bee",
+      "unchanged": false
+    },
+    {
+      "path": "analysis/select_reported_cohort.py",
+      "source": "Nature_Energy/select_reported_cohort.py",
+      "source_sha256": "e2b8204725839b02e6f4e2eca9b1abb83522ad5b7b89046d9535191bf8ac0df3",
+      "adaptation": "Preserved baseline Opus plus hosted80 selection; added exact Cartesian cohort validation, path CLI, hashes and removal of provider money fields.",
+      "sha256": "e7228591357687cd52bae8625b6b14a57424b746dbacad73b439ef67d16e7db9",
+      "unchanged": false
+    },
+    {
+      "path": "models/legacy/qwen/adapters/llama_responses.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::local_models/llama_responses.py",
+      "sha256": "6d5f9358dc446edfc78b180616c898057a4f6ef8cc088c80de1622ee496b7bf8",
+      "unchanged": true,
+      "source_sha256": "6d5f9358dc446edfc78b180616c898057a4f6ef8cc088c80de1622ee496b7bf8"
+    },
+    {
+      "path": "models/legacy/qwen/adapters/local_resume_chat.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::local_models/local_resume_chat.py",
+      "sha256": "064e26932a8423d509fa454efed7a08d977edd6076e82a35be841646bf09cc40",
+      "unchanged": true,
+      "source_sha256": "064e26932a8423d509fa454efed7a08d977edd6076e82a35be841646bf09cc40"
+    },
+    {
+      "path": "models/legacy/qwen/requirements-cluster.lock.txt",
+      "source": "ncsa/requirements-venv.lock.txt",
+      "sha256": "be23552b1bbf64cd59378fc42a44e766db2a113e8f74bd02b3988db1605444ea",
+      "unchanged": true,
+      "source_sha256": "be23552b1bbf64cd59378fc42a44e766db2a113e8f74bd02b3988db1605444ea"
+    },
+    {
+      "path": "models/legacy/qwen/requirements-scientific.txt",
+      "source": "ncsa/experiment/requirements.txt",
+      "sha256": "cbe1e4d8cfb2feca8493adcdc9d183fa33b86de0450453f06a4f64bcd6b3c7c8",
+      "unchanged": true,
+      "source_sha256": "cbe1e4d8cfb2feca8493adcdc9d183fa33b86de0450453f06a4f64bcd6b3c7c8"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/agent_contract.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/agent_contract.py",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "unchanged": true,
+      "source_sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/distribution.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/distribution.py",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "unchanged": true,
+      "source_sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/exploration.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/exploration.py",
+      "sha256": "1ea19602f64a9aa53afe6c90fd6aeedf6ffb61901b766d858c4f9c3e0bcbc7dc",
+      "unchanged": true,
+      "source_sha256": "1ea19602f64a9aa53afe6c90fd6aeedf6ffb61901b766d858c4f9c3e0bcbc7dc"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/extensions.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/extensions.py",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "unchanged": true,
+      "source_sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/multi_agent.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/multi_agent.py",
+      "sha256": "0c97fe8ae6c722d3e505ffa6a66de8ce87980bf4f41d23831dfafdb72d8d299b",
+      "unchanged": true,
+      "source_sha256": "0c97fe8ae6c722d3e505ffa6a66de8ce87980bf4f41d23831dfafdb72d8d299b"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/planning.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/planning.py",
+      "sha256": "b434c8e660ec2af8521c92c32c271fb537a1bc453fd7834c00f896daeff3bba4",
+      "unchanged": true,
+      "source_sha256": "b434c8e660ec2af8521c92c32c271fb537a1bc453fd7834c00f896daeff3bba4"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/policy.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/policy.py",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "unchanged": true,
+      "source_sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/procedure_graph.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/procedure_graph.py",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "unchanged": true,
+      "source_sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/providers.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/providers.py",
+      "sha256": "67054e48c3bbd1109259ceed9337c4cd224c91fe86000d674193c54cdc05d9ff",
+      "unchanged": true,
+      "source_sha256": "67054e48c3bbd1109259ceed9337c4cd224c91fe86000d674193c54cdc05d9ff"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/recovery.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/recovery.py",
+      "sha256": "ecf63ab83331e4be3e29db916e808583a21fdbfc3c72ca9e39079050c610fa63",
+      "unchanged": true,
+      "source_sha256": "ecf63ab83331e4be3e29db916e808583a21fdbfc3c72ca9e39079050c610fa63"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/reporting.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/reporting.py",
+      "sha256": "15038135fc6f2584aaf2f380875be0ff8fb138a8b5ec261e9ac73b158b7a56d2",
+      "unchanged": true,
+      "source_sha256": "15038135fc6f2584aaf2f380875be0ff8fb138a8b5ec261e9ac73b158b7a56d2"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/scenario_core.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/scenario_core.py",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "unchanged": true,
+      "source_sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/simulator.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/simulator.py",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "unchanged": true,
+      "source_sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/single_agent.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/single_agent.py",
+      "sha256": "753f1dc4d5c5bb086ffe9ebaba1f26df89741259dccfd50cb0b05bd41b921a0e",
+      "unchanged": true,
+      "source_sha256": "753f1dc4d5c5bb086ffe9ebaba1f26df89741259dccfd50cb0b05bd41b921a0e"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/transmission.py",
+      "source": "ncsa/runs/matrix_20260915_164906/source_snapshot.tar.gz::experiment/engine/transmission.py",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "unchanged": true,
+      "source_sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/requirements.lock.txt",
+      "source": "ncsa/experiment/requirements.lock.txt",
+      "sha256": "5953ffe1c8adcdca021d7481046593e9acc320f8d55aa2da19a3f97dea2520ed",
+      "unchanged": true,
+      "source_sha256": "5953ffe1c8adcdca021d7481046593e9acc320f8d55aa2da19a3f97dea2520ed"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/requirements.txt",
+      "source": "ncsa/experiment/requirements.txt",
+      "sha256": "cbe1e4d8cfb2feca8493adcdc9d183fa33b86de0450453f06a4f64bcd6b3c7c8",
+      "unchanged": true,
+      "source_sha256": "cbe1e4d8cfb2feca8493adcdc9d183fa33b86de0450453f06a4f64bcd6b3c7c8"
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/run.py",
+      "source": "ncsa/experiment/run.py",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "unchanged": true,
+      "source_sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7"
+    },
+    {
+      "path": "models/opus/adapters/request_retry.py",
+      "source": "weather_prediction/claude_opus_5_5/adapters/request_retry.py",
+      "source_sha256": "85c588177dc1357a2b232c4bf432c8c6e2684e987e2f9dba091cb6aeb016dba2",
+      "sha256": "85c588177dc1357a2b232c4bf432c8c6e2684e987e2f9dba091cb6aeb016dba2",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/campaign_source/check_api.py",
+      "source": "weather_prediction/claude_opus_5_5/check_api.py",
+      "source_sha256": "ef16912e87f2b954bc1afc9f50cc45e44e1ada9fb9d4dfd4f4fc8da0a1ecd473",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "2054287ce9f940791d345f843a52c5a28be24954cf31645723174115f4fe3083",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/campaign_source/preflight.py",
+      "source": "weather_prediction/claude_opus_5_5/preflight.py",
+      "source_sha256": "89349945512500733b01792a7e4af0952c582fd90cb8a529cf5eb6c9347e1a85",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "85cbab01889c4e01ccf0fc5b60e8030cbea0832b064dfaaa8963fea55a9c940e",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/campaign_source/run_campaign.py",
+      "source": "weather_prediction/claude_opus_5_5/run_campaign.py",
+      "source_sha256": "db50d62ed733460116271af31d6ce2b99f846106957668d724aed0254c6f6472",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "1925591db7c6c6fd3f82189b56b7904a4c78c4f352634ca87c9ac41a9ed37ef6",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/campaign_source/worker.py",
+      "source": "weather_prediction/claude_opus_5_5/worker.py",
+      "source_sha256": "db8cc5e23eec866fc80467afd439b3032013b9bcee2176bd459b4d34770aa49b",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "436806f25ec499c76c6c94e939f39ad88b23ade4a2002a75dfe6301e8d0379a0",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/climate_adapter.py",
+      "source": "weather_prediction/claude_opus_5_5/climate_adapter.py",
+      "source_sha256": "09b6e8253ad65b234b7b5302f07b0be5239e9049779702d09b9601df56d19a12",
+      "adaptation": "Validator dependency points to release preprocessing/nasa_climate/build_packs.py",
+      "sha256": "8e19661415ca7b1b7e8b518bb9967d839cb701fcf2e6159fd92ffba4f53962d5",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/model.json",
+      "source": "weather_prediction/claude_opus_5_5/model.json",
+      "source_sha256": "6a96d1cc4e5b54c24fff261308a84b263c3b2eef72239ab1493112c7a887de0c",
+      "sha256": "6a96d1cc4e5b54c24fff261308a84b263c3b2eef72239ab1493112c7a887de0c",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/opus_protocol.py",
+      "source": "weather_prediction/claude_opus_5_5/opus_protocol.py",
+      "source_sha256": "264254e21f43769d67dd012295105a639e25c9592c66048826f2e0a813ab66e0",
+      "sha256": "264254e21f43769d67dd012295105a639e25c9592c66048826f2e0a813ab66e0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/requirements.lock.txt",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "unchanged": true,
+      "source_sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0"
+    },
+    {
+      "path": "models/opus/requirements.txt",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true,
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3"
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/agent_contract.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/agent_contract.py",
+      "source_sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/api_usage.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/api_usage.py",
+      "source_sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/best_accepted.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/best_accepted.py",
+      "source_sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/dispatch_reuse.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/dispatch_reuse.py",
+      "source_sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/distribution.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/distribution.py",
+      "source_sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/extensions.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/extensions.py",
+      "source_sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/multi_agent.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/multi_agent.py",
+      "source_sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/planning.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/planning.py",
+      "source_sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/policy.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/policy.py",
+      "source_sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/procedure_graph.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/procedure_graph.py",
+      "source_sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/providers.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/providers.py",
+      "source_sha256": "a67129e970fb50b9bffdd5736028495302dc25b1616ee7dff1536266b78f3222",
+      "sha256": "a67129e970fb50b9bffdd5736028495302dc25b1616ee7dff1536266b78f3222",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/recovery.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/recovery.py",
+      "source_sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/reporting.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/reporting.py",
+      "source_sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/scenario_core.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/scenario_core.py",
+      "source_sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/simulator.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/simulator.py",
+      "source_sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/single_agent.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/single_agent.py",
+      "source_sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/transmission.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/engine/transmission.py",
+      "source_sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/requirements.lock.txt",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/requirements.lock.txt",
+      "source_sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/requirements.txt",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/requirements.txt",
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/run.py",
+      "source": "corrections/20260925-v2/claude_opus_thinking_v1/runtime_original/experiment/run.py",
+      "source_sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/agent_contract.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/agent_contract.py",
+      "source_sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/api_usage.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/api_usage.py",
+      "source_sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/best_accepted.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/best_accepted.py",
+      "source_sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/dispatch_reuse.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/dispatch_reuse.py",
+      "source_sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/distribution.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/distribution.py",
+      "source_sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/extensions.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/extensions.py",
+      "source_sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/multi_agent.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/multi_agent.py",
+      "source_sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/planning.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/planning.py",
+      "source_sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/policy.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/policy.py",
+      "source_sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/procedure_graph.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/procedure_graph.py",
+      "source_sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/providers.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/providers.py",
+      "source_sha256": "8d5d264bb3c66a7aa22b4233d60565bfcc5c04d55a16a1a8477123ea1910d193",
+      "adaptation": "Relative adapter import for flattened release layout; request and physics unchanged",
+      "sha256": "28748e74c22e6174ac130f6572fe2f03e07fbac82b2971d6d61c699a35e40e22",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/recovery.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/recovery.py",
+      "source_sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/reporting.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/reporting.py",
+      "source_sha256": "cb94310e542d04114babb5e01f6192b137a13672182f0a1d48f58c05d5bba5af",
+      "sha256": "cb94310e542d04114babb5e01f6192b137a13672182f0a1d48f58c05d5bba5af",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/scenario_core.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/scenario_core.py",
+      "source_sha256": "e836f787f1fc3b3ec2f36e1036cdb8d3eb343ce3c0ab9804c179306240ceb899",
+      "sha256": "e836f787f1fc3b3ec2f36e1036cdb8d3eb343ce3c0ab9804c179306240ceb899",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/simulator.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/simulator.py",
+      "source_sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/single_agent.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/single_agent.py",
+      "source_sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/transmission.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/engine/transmission.py",
+      "source_sha256": "5e0d832e484c342d0ae4e480154333ec6ebee0ed83427c3ad8022341dca87bb0",
+      "sha256": "5e0d832e484c342d0ae4e480154333ec6ebee0ed83427c3ad8022341dca87bb0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/requirements.lock.txt",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/requirements.lock.txt",
+      "source_sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/requirements.txt",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/requirements.txt",
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_calendar/run.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_calendar/experiment/run.py",
+      "source_sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_origin.json",
+      "source": "weather_prediction/claude_opus_5_5/runtime_origin.json",
+      "source_sha256": "39e62aeb3855f76c83b961f4041838673d43d947685181cfc587b396746e6974",
+      "adaptation": "Compact release manifest; retain source manifest hash and protocol revision; portable paths",
+      "sha256": "6ac7d3ca4e9768c82e94a34600699da55ae060733f7079f730156e99a54a83af",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/runtime_original/engine/agent_contract.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/agent_contract.py",
+      "source_sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/api_usage.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/api_usage.py",
+      "source_sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/best_accepted.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/best_accepted.py",
+      "source_sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/dispatch_reuse.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/dispatch_reuse.py",
+      "source_sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/distribution.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/distribution.py",
+      "source_sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/extensions.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/extensions.py",
+      "source_sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/multi_agent.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/multi_agent.py",
+      "source_sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/planning.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/planning.py",
+      "source_sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/policy.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/policy.py",
+      "source_sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/procedure_graph.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/procedure_graph.py",
+      "source_sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/providers.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/providers.py",
+      "source_sha256": "8d5d264bb3c66a7aa22b4233d60565bfcc5c04d55a16a1a8477123ea1910d193",
+      "adaptation": "Relative adapter import for flattened release layout; request and physics unchanged",
+      "sha256": "28748e74c22e6174ac130f6572fe2f03e07fbac82b2971d6d61c699a35e40e22",
+      "unchanged": false
+    },
+    {
+      "path": "models/opus/runtime_original/engine/recovery.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/recovery.py",
+      "source_sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/reporting.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/reporting.py",
+      "source_sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/scenario_core.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/scenario_core.py",
+      "source_sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/simulator.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/simulator.py",
+      "source_sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/single_agent.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/single_agent.py",
+      "source_sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/engine/transmission.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/engine/transmission.py",
+      "source_sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/requirements.lock.txt",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/requirements.lock.txt",
+      "source_sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/requirements.txt",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/requirements.txt",
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true
+    },
+    {
+      "path": "models/opus/runtime_original/run.py",
+      "source": "weather_prediction/claude_opus_5_5/runtime_original/experiment/run.py",
+      "source_sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/adapters/history_resume.py",
+      "source": "weather_prediction/gpt_6_1_sol/adapters/history_resume.py",
+      "source_sha256": "956a080cc8982115a1745e03c35b7dfa50e33db1296663ae17fa7dc51caa400b",
+      "sha256": "956a080cc8982115a1745e03c35b7dfa50e33db1296663ae17fa7dc51caa400b",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/adapters/request_retry.py",
+      "source": "weather_prediction/gpt_6_1_sol/adapters/request_retry.py",
+      "source_sha256": "85c588177dc1357a2b232c4bf432c8c6e2684e987e2f9dba091cb6aeb016dba2",
+      "sha256": "85c588177dc1357a2b232c4bf432c8c6e2684e987e2f9dba091cb6aeb016dba2",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/adapters/sa_history_resume.py",
+      "source": "weather_prediction/gpt_6_1_sol/adapters/sa_history_resume.py",
+      "source_sha256": "79440d1d7076df1874f7460ece13b5a8e41d6757530ce4f817d33a54b04bf0e2",
+      "sha256": "79440d1d7076df1874f7460ece13b5a8e41d6757530ce4f817d33a54b04bf0e2",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/campaign_source/check_api.py",
+      "source": "weather_prediction/gpt_6_1_sol/check_api.py",
+      "source_sha256": "f14b9c90a7fb23960bc59ccc04d40e8d589919d24ff5e1b7fca55fbc6242ac87",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "4e30853327c8c332a91d91827228fcd8113a9cda0fe79d0f161bc7dfae79f854",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/campaign_source/preflight.py",
+      "source": "weather_prediction/gpt_6_1_sol/preflight.py",
+      "source_sha256": "89349945512500733b01792a7e4af0952c582fd90cb8a529cf5eb6c9347e1a85",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "85cbab01889c4e01ccf0fc5b60e8030cbea0832b064dfaaa8963fea55a9c940e",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/campaign_source/run_campaign.py",
+      "source": "weather_prediction/gpt_6_1_sol/run_campaign.py",
+      "source_sha256": "a77e895dccbc2dbd7cee6d95920c4adb182ad2dad66127ffb89790c757aab729",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "ecfece65e9a5216101902d49917cfb2fa563267ed60830091fbc9c67a9fbf44a",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/campaign_source/worker.py",
+      "source": "weather_prediction/gpt_6_1_sol/worker.py",
+      "source_sha256": "25e7d5c722075fd878eff107205f0254d4eb191150b7aa69ae2134c2d77e0fe3",
+      "adaptation": "Historical reference with early direct-execution guard; personal credential loader removed; portable commands live in tools/.",
+      "sha256": "9d5bc607f7281a40a27bd9c6beae4cd98cd66b832dba853a4a1a27b19016535b",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/climate_adapter.py",
+      "source": "weather_prediction/gpt_6_1_sol/climate_adapter.py",
+      "source_sha256": "09b6e8253ad65b234b7b5302f07b0be5239e9049779702d09b9601df56d19a12",
+      "adaptation": "Validator dependency points to release preprocessing/nasa_climate/build_packs.py",
+      "sha256": "8e19661415ca7b1b7e8b518bb9967d839cb701fcf2e6159fd92ffba4f53962d5",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/model.json",
+      "source": "weather_prediction/gpt_6_1_sol/model.json",
+      "source_sha256": "b1d548ce57512adaad83f63370911728a0aa57c251f1aa7c5b5cc665004b706f",
+      "sha256": "b1d548ce57512adaad83f63370911728a0aa57c251f1aa7c5b5cc665004b706f",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/requirements.lock.txt",
+      "source": "corrections/20260925-v2/gpt_sol/runtime_original/experiment/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "unchanged": true,
+      "source_sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0"
+    },
+    {
+      "path": "models/sol/requirements.txt",
+      "source": "corrections/20260925-v2/gpt_sol/runtime_original/experiment/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true,
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3"
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/agent_contract.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/agent_contract.py",
+      "source_sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/api_usage.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/api_usage.py",
+      "source_sha256": "4c41740ada9b51a3b7db649e0a932f6321400a004c2f36a13bc296899cb311bf",
+      "sha256": "4c41740ada9b51a3b7db649e0a932f6321400a004c2f36a13bc296899cb311bf",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/best_accepted.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/best_accepted.py",
+      "source_sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/dispatch_reuse.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/dispatch_reuse.py",
+      "source_sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/distribution.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/distribution.py",
+      "source_sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/extensions.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/extensions.py",
+      "source_sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/multi_agent.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/multi_agent.py",
+      "source_sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/planning.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/planning.py",
+      "source_sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/policy.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/policy.py",
+      "source_sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/procedure_graph.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/procedure_graph.py",
+      "source_sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/providers.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/providers.py",
+      "source_sha256": "0dcc01b0a9a01c1f26e018c56c0ed4c20bdef67d1acd468351106327873c26ab",
+      "adaptation": "Relative adapter import for flattened release layout; request and physics unchanged",
+      "sha256": "b0a8f2e30075693edec08a792d33e2671863d75fd645f6f466a50383e7a5dc2c",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/recovery.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/recovery.py",
+      "source_sha256": "7f8d19e35a827ad0f1973d4fb8f7e6ae2cf2069454e0706de0f756f77f32e1ac",
+      "sha256": "7f8d19e35a827ad0f1973d4fb8f7e6ae2cf2069454e0706de0f756f77f32e1ac",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/reporting.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/reporting.py",
+      "source_sha256": "cb94310e542d04114babb5e01f6192b137a13672182f0a1d48f58c05d5bba5af",
+      "sha256": "cb94310e542d04114babb5e01f6192b137a13672182f0a1d48f58c05d5bba5af",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/scenario_core.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/scenario_core.py",
+      "source_sha256": "e836f787f1fc3b3ec2f36e1036cdb8d3eb343ce3c0ab9804c179306240ceb899",
+      "sha256": "e836f787f1fc3b3ec2f36e1036cdb8d3eb343ce3c0ab9804c179306240ceb899",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/simulator.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/simulator.py",
+      "source_sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/single_agent.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/single_agent.py",
+      "source_sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/transmission.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/engine/transmission.py",
+      "source_sha256": "5e0d832e484c342d0ae4e480154333ec6ebee0ed83427c3ad8022341dca87bb0",
+      "sha256": "5e0d832e484c342d0ae4e480154333ec6ebee0ed83427c3ad8022341dca87bb0",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/requirements.lock.txt",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/requirements.lock.txt",
+      "source_sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/requirements.txt",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/requirements.txt",
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_calendar/run.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_calendar/experiment/run.py",
+      "source_sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_origin.json",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_origin.json",
+      "source_sha256": "71941fdbaae80499dbe9d605b8cf68d64eeffad85b75b04c500d7405d7915648",
+      "adaptation": "Compact release manifest; retain source manifest hash and protocol revision; portable paths",
+      "sha256": "85ece46104468a8ed22eb40845043091a6c08f705efc55ef28f69d3a1aec4c4b",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/runtime_original/engine/agent_contract.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/agent_contract.py",
+      "source_sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/api_usage.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/api_usage.py",
+      "source_sha256": "4c41740ada9b51a3b7db649e0a932f6321400a004c2f36a13bc296899cb311bf",
+      "sha256": "4c41740ada9b51a3b7db649e0a932f6321400a004c2f36a13bc296899cb311bf",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/best_accepted.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/best_accepted.py",
+      "source_sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/dispatch_reuse.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/dispatch_reuse.py",
+      "source_sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/distribution.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/distribution.py",
+      "source_sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/extensions.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/extensions.py",
+      "source_sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/multi_agent.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/multi_agent.py",
+      "source_sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/planning.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/planning.py",
+      "source_sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/policy.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/policy.py",
+      "source_sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/procedure_graph.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/procedure_graph.py",
+      "source_sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/providers.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/providers.py",
+      "source_sha256": "0dcc01b0a9a01c1f26e018c56c0ed4c20bdef67d1acd468351106327873c26ab",
+      "adaptation": "Relative adapter import for flattened release layout; request and physics unchanged",
+      "sha256": "b0a8f2e30075693edec08a792d33e2671863d75fd645f6f466a50383e7a5dc2c",
+      "unchanged": false
+    },
+    {
+      "path": "models/sol/runtime_original/engine/recovery.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/recovery.py",
+      "source_sha256": "7f8d19e35a827ad0f1973d4fb8f7e6ae2cf2069454e0706de0f756f77f32e1ac",
+      "sha256": "7f8d19e35a827ad0f1973d4fb8f7e6ae2cf2069454e0706de0f756f77f32e1ac",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/reporting.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/reporting.py",
+      "source_sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/scenario_core.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/scenario_core.py",
+      "source_sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/simulator.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/simulator.py",
+      "source_sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/single_agent.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/single_agent.py",
+      "source_sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/engine/transmission.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/engine/transmission.py",
+      "source_sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/requirements.lock.txt",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/requirements.lock.txt",
+      "source_sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/requirements.txt",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/requirements.txt",
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true
+    },
+    {
+      "path": "models/sol/runtime_original/run.py",
+      "source": "weather_prediction/gpt_6_1_sol/runtime_original/experiment/run.py",
+      "source_sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "unchanged": true
+    },
+    {
+      "path": "preprocessing/experiment/scripts/annual_row.py",
+      "source": "experiment/scripts/annual_row.py",
+      "sha256": "d66c3220ef4f296a8ecb3680a3ebba4fdd906627475d32ced4589a8187e2869d",
+      "unchanged": true,
+      "source_sha256": "d66c3220ef4f296a8ecb3680a3ebba4fdd906627475d32ced4589a8187e2869d"
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_country_pack.py",
+      "source": "experiment/scripts/build_country_pack.py",
+      "sha256": "71e25e21bbd988ae502acd6e71c7dd11defeb493645804465f80dbc24f68454e",
+      "unchanged": false,
+      "source_sha256": "ebb1b4f31d8a63f72a1550d115b0ac2ad1f9c89f0d111df6fda4069cb5767887",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_inputs.py",
+      "source": "experiment/scripts/build_inputs.py",
+      "sha256": "95c941994df8131ef7638081a96f83ac0c862da71c1041c24a84788b86a9b5a5",
+      "unchanged": false,
+      "source_sha256": "cafad62e12fc6a73158b832381f4338a77c3cdf3e7e70a287b71e01bc2dc8aba",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_weather.py",
+      "source": "experiment/scripts/build_weather.py",
+      "sha256": "621aaf47a68af7767bd2eeb7c5cd9210c7079695bb1065cd7597e43c3c0ab422",
+      "unchanged": false,
+      "source_sha256": "98221719d4446075ccf737b010388d05c7626157632c07c5762af506c66fa09d",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_zonal_network.py",
+      "source": "experiment/scripts/build_zonal_network.py",
+      "sha256": "f9bda199752dea1fb0cf1c9017082d4f7bd6ba85824f37b676a5ea8661c052b9",
+      "unchanged": false,
+      "source_sha256": "ca5649e6f6cf439fbbcc4d68477ec4ea7a31a3d2846602f39ad3410377926014",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/experiment/scripts/calibrate_feeders.py",
+      "source": "experiment/scripts/calibrate_feeders.py",
+      "sha256": "d59cc18ffd58895946580bac3c71fe195cbcced1ffcab1bc169fe653cf7dbaba",
+      "unchanged": false,
+      "source_sha256": "7fe5af0e35fcb75b700cab42bfcc3eec4e7a124723b5988900b2595f4672a964",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/experiment/scripts/fetch_cenace_demand.py",
+      "source": "experiment/scripts/fetch_cenace_demand.py",
+      "sha256": "ab536a35cc8c640246e09d6d157f0f5c44c216e9741620fdaa7ab9182f98a422",
+      "unchanged": false,
+      "source_sha256": "3c9215b05ddfecf788e5b39c990477a2133d26dd91082a48f9552e6fc8db2029",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/experiment/scripts/verify_inputs.py",
+      "source": "experiment/scripts/verify_inputs.py",
+      "sha256": "1872a4a40c4ddf7d53392529077147e93a87deeeed28d8d55f1815e4aca3454c",
+      "unchanged": false,
+      "source_sha256": "f5353bb15826daa24aac084972b23ea8308b7f24ac7e425b3c5b6625fcdf4adf",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/nasa_climate/audit_outputs.py",
+      "source": "nasa_climate/scripts/audit_outputs.py",
+      "source_sha256": "1df71f79eb734f3446768ae90d83c85762d8e824176ba802c8543984066ecb72",
+      "adaptation": "External data root, root-qualified provenance, headless plan/help and release runtime paths; meteorological reconstruction and demand preservation retained.",
+      "sha256": "3c62eb00512f2db7b086b24b97af991c0d0b9d50fb92fb3c1ea4c458916d312d",
+      "unchanged": false
+    },
+    {
+      "path": "preprocessing/nasa_climate/build_hourly.py",
+      "source": "nasa_climate/scripts/build_hourly.py",
+      "source_sha256": "e017eb27c118a63b58e018dd99d25a637af0d21c757a413b4bae822cfdcd37a7",
+      "adaptation": "External data root, root-qualified provenance, headless plan/help and release runtime paths; meteorological reconstruction and demand preservation retained.",
+      "sha256": "7ee15a224adf519faaf3f232671a456a3aa0f6a7090128d20b2af41e9fbb7a73",
+      "unchanged": false
+    },
+    {
+      "path": "preprocessing/nasa_climate/build_packs.py",
+      "source": "nasa_climate/scripts/build_packs.py",
+      "source_sha256": "9c373b4e029b58d42fa3ce6fa4e125909b34bb96b385151ae5ab40fcbd706efd",
+      "adaptation": "External data root, root-qualified provenance, headless plan/help and release runtime paths; meteorological reconstruction and demand preservation retained. Historical runtime bytes are verified at their original path; derived summary comparisons allow Python summation roundoff only (relative/absolute tolerance 1e-12); all file hashes remain exact.",
+      "sha256": "ec08c0b70d9dae2f12a08d78fdcc8384f54923d7a175b00e8e2ff700088c13e4",
+      "unchanged": false
+    },
+    {
+      "path": "preprocessing/nasa_climate/download_nasa.py",
+      "source": "nasa_climate/scripts/download_nasa.py",
+      "source_sha256": "dd2884b254c5c5cbb60ed8f5ce0053c1b212677ec6a61fc88b42785f0122a879",
+      "adaptation": "External data root, root-qualified provenance, headless plan/help and release runtime paths; meteorological reconstruction and demand preservation retained.",
+      "sha256": "739d40c6b42f13736f578c676f1abba0498ed3084bfdd16b75716a5a5bb8c588",
+      "unchanged": false
+    },
+    {
+      "path": "preprocessing/prediction/__init__.py",
+      "source": "prediction/__init__.py",
+      "sha256": "c2faa124ed273fefb58bbd8d21de25e6ab60888dc197ee55cfc0a740588ee4c1",
+      "unchanged": true,
+      "source_sha256": "c2faa124ed273fefb58bbd8d21de25e6ab60888dc197ee55cfc0a740588ee4c1"
+    },
+    {
+      "path": "preprocessing/prediction/run.py",
+      "source": "prediction/run.py",
+      "sha256": "af94d4df79979da06997c06897ae7c49f5776401c2278b4f035da35f7111e729",
+      "unchanged": false,
+      "source_sha256": "cda4c042ba71a3fea8bdc3c21ba8e52c25b7743c5e178f02bc2f9167741de391",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/prediction/scenarios.py",
+      "source": "prediction/scenarios.py",
+      "sha256": "11e62323650aa7aaf00eed77b2d63045a2ec388f5054eb9db484d2efe244ffc3",
+      "unchanged": false,
+      "source_sha256": "de23c965576d818892994f0a9397da385f5a73f13605b72d211c6b6b5b2cdce0",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/prediction_local/prepare_all.py",
+      "source": "prediction_local/prepare_all.py",
+      "sha256": "6cabfbbaa616bd62c4679ec8401834fa8658b7738a4b8605ca44e0d32abf5d09",
+      "unchanged": false,
+      "source_sha256": "c923ddfea95cba23cae6a7c80eb7b16a933ab77509908d8a329ace5ed564736d",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable. Australia baseline description explicitly names TOTALDEMAND; numerical growth unchanged."
+    },
+    {
+      "path": "preprocessing/prediction_local/prepare_nyiso.py",
+      "source": "prediction_local/prepare_nyiso.py",
+      "sha256": "59ef7408505f30e63184a6df138cb200fdd4227bf97d6c6d2107e5d1f56232c6",
+      "unchanged": false,
+      "source_sha256": "dd8e5384cbd63441dca4aaf3025ed86bf954fd938938bcb178b7ad5333781c60",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/prediction_local/verify_all.py",
+      "source": "prediction_local/verify_all.py",
+      "sha256": "ce242bc7f9b367c011c0c247cb40b0285a96a4bf6c36b3369ac457969802be1d",
+      "unchanged": false,
+      "source_sha256": "54994dc5f10dd280cc196b48c64f333232f7117b700e6df8bcbbff693b338b36",
+      "adaptation": "External GRID_DATA_ROOT; code imports remain source-relative; historical execution wrapper replaced by preparation-only CLI where applicable."
+    },
+    {
+      "path": "preprocessing/requirements.txt",
+      "source": "experiment/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "unchanged": true,
+      "source_sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3"
+    },
+    {
+      "path": "experiments/carbon/co2_adapter.py",
+      "source": "co2_constraint/co2_adapter.py",
+      "source_sha256": "a800d29e514e3a51bce3c8646cd1fdd2b2186be3c9f0275a316f3a7d70c3bef7",
+      "sha256": "a800d29e514e3a51bce3c8646cd1fdd2b2186be3c9f0275a316f3a7d70c3bef7",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/carbon/cases.json",
+      "source": "co2_constraint/cases.json",
+      "source_sha256": "a591e692170dab64c4524d47d42fc32b4f44b39c178d58d1e2a6770789d8892b",
+      "sha256": "a591e692170dab64c4524d47d42fc32b4f44b39c178d58d1e2a6770789d8892b",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/carbon/archive_controller/run_campaign.py",
+      "source": "co2_constraint/run_campaign.py",
+      "source_sha256": "7b8e29e5fa4c32bb1c13ea9dfeb412a1a31ce0f1ce6bbbe2056ef170b9fcf8d7",
+      "sha256": "7b8e29e5fa4c32bb1c13ea9dfeb412a1a31ce0f1ce6bbbe2056ef170b9fcf8d7",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/carbon/archive_controller/worker.py",
+      "source": "co2_constraint/worker.py",
+      "source_sha256": "b2db8b21df5c37a8930e1f905384c4586cf20f84abf1e04d91523d98cc870813",
+      "sha256": "b2db8b21df5c37a8930e1f905384c4586cf20f84abf1e04d91523d98cc870813",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/carbon/archive_controller/sequence_queue.py",
+      "source": "co2_constraint/sequence_queue.py",
+      "source_sha256": "16919748eb927cf21f783c39c2d9e7fb158d4ae215705db626bea4a1d41fd935",
+      "sha256": "16919748eb927cf21f783c39c2d9e7fb158d4ae215705db626bea4a1d41fd935",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/carbon/archive_controller/pause_after_current_job.py",
+      "source": "co2_constraint/pause_after_current_job.py",
+      "source_sha256": "3fe42dbd4746c12c448dfac8233ed8cb7b67a176f66e80d7b00d4ae63d03d9a2",
+      "sha256": "3fe42dbd4746c12c448dfac8233ed8cb7b67a176f66e80d7b00d4ae63d03d9a2",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/carbon/archive_controller/pause_on_result.py",
+      "source": "co2_constraint/pause_on_result.py",
+      "source_sha256": "7122139d473c6410cf281455e5a45432e2aebe042655706280281c060dfdbbf0",
+      "sha256": "7122139d473c6410cf281455e5a45432e2aebe042655706280281c060dfdbbf0",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_co2_adapter.py",
+      "source": "co2_constraint/tests/test_co2_adapter.py",
+      "source_sha256": "a07d328df4a27630ca5fa77897d19c5543da81aeaabda97ead4a5ccee725c23b",
+      "sha256": "d4f62831567d14ea752f63791da84b85252f8a949d3edff0d166451ded756f1a",
+      "unchanged": false,
+      "adaptation": "Portable release paths; scientific calculation and original source identity retained."
+    },
+    {
+      "path": "analysis/carbon/build_carbon_figures.py",
+      "source": "figure_carbon/build_carbon_figures.py",
+      "source_sha256": "e83d846b435ba1e920794c4f801890cb952766ceab040ac59ab9a179f1c5e79a",
+      "sha256": "f0206e174004dd464758cdb5078412a3a339355aa56ffd5f5881aa9a4c1caabe",
+      "unchanged": false,
+      "adaptation": "Portable release paths; scientific calculation and original source identity retained."
+    },
+    {
+      "path": "analysis/carbon/build_carbon_expert_comparison.py",
+      "source": "figure_carbon/build_carbon_expert_comparison.py",
+      "source_sha256": "3b37cffccfe2c125a777f50ded9a5cde537c6d7c0a33898681efe06ba1d4d623",
+      "sha256": "092522a322acad2695e64bf91089bbaed5d1792465caa1cac22e9014a21288a8",
+      "unchanged": false,
+      "adaptation": "Portable release paths; scientific calculation and original source identity retained."
+    },
+    {
+      "path": "analysis/carbon/geo_carbon.py",
+      "source": "figure_carbon/geo_carbon.py",
+      "source_sha256": "99d60ee99fc8c251a6103c472804ff1bf9c5f636de0e6296b4bb355a4f3203a0",
+      "sha256": "4621f37324dc98af82cbbb5c0c8b7ca055a4ee7c52771bcc9e1a6afad1808bee",
+      "unchanged": false,
+      "adaptation": "Portable release paths; scientific calculation and original source identity retained."
+    },
+    {
+      "path": "analysis/carbon/build_combined_grid_carbon.py",
+      "source": "figure_carbon/build_combined_grid_carbon.py",
+      "source_sha256": "f818ddd6d1d23f73d5d61a91077e81febb45fe0e0efb79998e458e59a0714c98",
+      "sha256": "f42dfb2c23a3ca6005e6fb834eb9b9e3ad298f5009c77e80aef73592346a99fc",
+      "unchanged": false,
+      "adaptation": "Portable release paths; scientific calculation and original source identity retained."
+    },
+    {
+      "path": "manuscript/1_Nature.tex",
+      "source": "supplied-manuscript/Energy_Grid/1_Nature.tex",
+      "sha256": "ae49d7034f264c290b958607c52d48f78cbcdc52af74a266086a625d979c2da6",
+      "source_sha256": "ae49d7034f264c290b958607c52d48f78cbcdc52af74a266086a625d979c2da6",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/2_Cover_Letter_Nature.tex",
+      "source": "supplied-manuscript/Energy_Grid/2_Cover_Letter_Nature.tex",
+      "sha256": "50a2ad652562f34ad503d6678e6067e75ed9b8eaa11875b85ae6f4d0f3379678",
+      "source_sha256": "50a2ad652562f34ad503d6678e6067e75ed9b8eaa11875b85ae6f4d0f3379678",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/carbon_expert_comparison_table.tex",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/carbon_expert_comparison_table.tex",
+      "sha256": "c3fba6e3ae28bf62ff45d1cde92dd6616709c20ac13fa13b6ccdea3efb215e8d",
+      "source_sha256": "c3fba6e3ae28bf62ff45d1cde92dd6616709c20ac13fa13b6ccdea3efb215e8d",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/combined_grid_carbon.pdf",
+      "sha256": "8ef6c737d02d2674cbe5a7f5300ab5bb9e26d338789837c6a8d27caa72dc5ec0",
+      "source_sha256": "8ef6c737d02d2674cbe5a7f5300ab5bb9e26d338789837c6a8d27caa72dc5ec0",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon.png",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/combined_grid_carbon.png",
+      "sha256": "34bfd863b885bc8dce808c9ab78bbac2a0c53214044674141c744b7dbfe7827c",
+      "source_sha256": "34bfd863b885bc8dce808c9ab78bbac2a0c53214044674141c744b7dbfe7827c",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon.svg",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/combined_grid_carbon.svg",
+      "sha256": "15a7d9409f0d190d46d637b6c36ae7862d991d45d693b1f80b7d050a8a68f9e7",
+      "source_sha256": "15a7d9409f0d190d46d637b6c36ae7862d991d45d693b1f80b7d050a8a68f9e7",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon_atlas.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/combined_grid_carbon_atlas.pdf",
+      "sha256": "1ef828022d357031b8a795f7b16c83eb197bbf6d73da05f2db069859e73dc93d",
+      "source_sha256": "1ef828022d357031b8a795f7b16c83eb197bbf6d73da05f2db069859e73dc93d",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon_captions.tex",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/combined_grid_carbon_captions.tex",
+      "sha256": "9f52b539a2d593120f2adf2eba15490376ac1631fe978e4611ebff2fe564cc9e",
+      "source_sha256": "9f52b539a2d593120f2adf2eba15490376ac1631fe978e4611ebff2fe564cc9e",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/fig2_carbon_outcomes.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/fig2_carbon_outcomes.pdf",
+      "sha256": "11e8f672210cbf9e6201f1915ecef8bac6a9ebe5ae7d156c8ef53d9d8a120de5",
+      "source_sha256": "11e8f672210cbf9e6201f1915ecef8bac6a9ebe5ae7d156c8ef53d9d8a120de5",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/fig3_carbon_portfolios.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/fig3_carbon_portfolios.pdf",
+      "sha256": "02ede8858f830c95bfd22e8d92a0dc5fc2a756878f78e6fbf4329d2aa3b1cd88",
+      "source_sha256": "02ede8858f830c95bfd22e8d92a0dc5fc2a756878f78e6fbf4329d2aa3b1cd88",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/fig3_carbon_portfolios.png",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/fig3_carbon_portfolios.png",
+      "sha256": "bd4e074dea15bc09536597fd6fd05c204b598c66d6d0f3eefda15c2975c1779d",
+      "source_sha256": "bd4e074dea15bc09536597fd6fd05c204b598c66d6d0f3eefda15c2975c1779d",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/fig3_carbon_portfolios.svg",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/fig3_carbon_portfolios.svg",
+      "sha256": "3484d88ca1fc4bf036e68149b2cc9edf0659eea3e6f8f40f9656d808838be0ba",
+      "source_sha256": "3484d88ca1fc4bf036e68149b2cc9edf0659eea3e6f8f40f9656d808838be0ba",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/fig4_carbon_search.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/fig4_carbon_search.pdf",
+      "sha256": "43d286c126167ed6a438504aa52ffab1a46e0d563d47911d88bc8e15a1d12b38",
+      "source_sha256": "43d286c126167ed6a438504aa52ffab1a46e0d563d47911d88bc8e15a1d12b38",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/figS1_carbon_vs_loose_cap.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/figS1_carbon_vs_loose_cap.pdf",
+      "sha256": "fa648a5de735b7855c99401913949f43923e61dbc05d34b380dfdc428e7d7ffd",
+      "source_sha256": "fa648a5de735b7855c99401913949f43923e61dbc05d34b380dfdc428e7d7ffd",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/figS2_carbon_cost_intervals.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/figS2_carbon_cost_intervals.pdf",
+      "sha256": "2b35f8d2b753d95a3f86c95142aaf002230fb4f762a05d11aacd37d7e8601fe1",
+      "source_sha256": "2b35f8d2b753d95a3f86c95142aaf002230fb4f762a05d11aacd37d7e8601fe1",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/geographic_carbon_atlas.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/geographic_carbon_atlas.pdf",
+      "sha256": "09bf5bb547afc961bd36fb0b8e58a39ce30cc329fd76cbb4a491303488f5a2d1",
+      "source_sha256": "09bf5bb547afc961bd36fb0b8e58a39ce30cc329fd76cbb4a491303488f5a2d1",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figure_carbon/geographic_carbon_overview.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figure_carbon/geographic_carbon_overview.pdf",
+      "sha256": "215a125ac065f533435e074b9d7ef4e0e82f1a3dbd0de248b3c7f0d5ece07a36",
+      "source_sha256": "215a125ac065f533435e074b9d7ef4e0e82f1a3dbd0de248b3c7f0d5ece07a36",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/fig1_framework.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/fig1_framework.pdf",
+      "sha256": "9de08d45aaf1a982c650b821d9c41abbaca18ec09f924cc85377ba0316f47099",
+      "source_sha256": "9de08d45aaf1a982c650b821d9c41abbaca18ec09f924cc85377ba0316f47099",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/fig2_geographic_planning.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/fig2_geographic_planning.pdf",
+      "sha256": "98c5b1fc972ded2496295ef9a911c867447d7c0f9ea136442572170db66b4482",
+      "source_sha256": "98c5b1fc972ded2496295ef9a911c867447d7c0f9ea136442572170db66b4482",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/fig2_model_comparison.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/fig2_model_comparison.pdf",
+      "sha256": "55b48398d60884f3cdaea418e3c8e03ef066fc7d5a213a1fba036bfbf1a3ebc3",
+      "source_sha256": "55b48398d60884f3cdaea418e3c8e03ef066fc7d5a213a1fba036bfbf1a3ebc3",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/fig3_ercot_verified_expansion.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/fig3_ercot_verified_expansion.pdf",
+      "sha256": "abd1e3d7176419d91be872dcf1f3549d5b061dda33aa7f1521770553ea616ffe",
+      "source_sha256": "abd1e3d7176419d91be872dcf1f3549d5b061dda33aa7f1521770553ea616ffe",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/fig3_weather_comparison.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/fig3_weather_comparison.pdf",
+      "sha256": "388b2c2384e7dc65af7e8136ac95290a7e4a0da2d48f2cd9040021b8dc4ee830",
+      "source_sha256": "388b2c2384e7dc65af7e8136ac95290a7e4a0da2d48f2cd9040021b8dc4ee830",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/australia.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/australia.pdf",
+      "sha256": "7f8c53141a97cc3a6a2c71afad8bf22afea4135ca520b2745bb53af6d763279e",
+      "source_sha256": "7f8c53141a97cc3a6a2c71afad8bf22afea4135ca520b2745bb53af6d763279e",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/brazil.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/brazil.pdf",
+      "sha256": "b2403cc47f07aabc09e7c67747ff02fd90627a0a7f54065e645a2bbdcc8d7bb9",
+      "source_sha256": "b2403cc47f07aabc09e7c67747ff02fd90627a0a7f54065e645a2bbdcc8d7bb9",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/ercot.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/ercot.pdf",
+      "sha256": "ad6cc52f93c174b6186a1a84490fde5ada84df79efb8527490425ce179f49463",
+      "source_sha256": "ad6cc52f93c174b6186a1a84490fde5ada84df79efb8527490425ce179f49463",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/mexico.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/mexico.pdf",
+      "sha256": "ce49373b0b75ff60dd5012427bea0347414369404a666a6fbf9e495437df799b",
+      "source_sha256": "ce49373b0b75ff60dd5012427bea0347414369404a666a6fbf9e495437df799b",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/miso.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/miso.pdf",
+      "sha256": "619275d4a3ee17420628253480e2f6c2b397ac65ecb9e941b16777f0696ddd35",
+      "source_sha256": "619275d4a3ee17420628253480e2f6c2b397ac65ecb9e941b16777f0696ddd35",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/new_zealand.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/new_zealand.pdf",
+      "sha256": "df48d1017e5177de2359f6cce3eb4f5604c4cddbe5b629e90521aa80e1474fb2",
+      "source_sha256": "df48d1017e5177de2359f6cce3eb4f5604c4cddbe5b629e90521aa80e1474fb2",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/nyiso.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/nyiso.pdf",
+      "sha256": "a47f46e38736195f03550a0e6ec0a0aeb300a1f2b2397cf3828eedc63866310b",
+      "source_sha256": "a47f46e38736195f03550a0e6ec0a0aeb300a1f2b2397cf3828eedc63866310b",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/south_africa.pdf",
+      "source": "supplied-manuscript/Energy_Grid/figures/regional_atlas/south_africa.pdf",
+      "sha256": "5e5ed08c1abe3187973c221e9ae71b1cec5987ad64d2777cf539d693b16e5450",
+      "source_sha256": "5e5ed08c1abe3187973c221e9ae71b1cec5987ad64d2777cf539d693b16e5450",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/sn-bibliography.bib",
+      "source": "supplied-manuscript/Energy_Grid/sn-bibliography.bib",
+      "sha256": "55ce8af12504c25b5295bbc9dc5676a14c447c0393d6c65ad83857bafb8b11ee",
+      "source_sha256": "55ce8af12504c25b5295bbc9dc5676a14c447c0393d6c65ad83857bafb8b11ee",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/sn-jnl.cls",
+      "source": "supplied-manuscript/Energy_Grid/sn-jnl.cls",
+      "sha256": "3c92b1a4e4d52b1d0713170615159c314415c5a020364f8a28ca3026ca13d7c6",
+      "source_sha256": "3c92b1a4e4d52b1d0713170615159c314415c5a020364f8a28ca3026ca13d7c6",
+      "unchanged": true
+    },
+    {
+      "path": "manuscript/sn-nature.bst",
+      "source": "supplied-manuscript/Energy_Grid/sn-nature.bst",
+      "sha256": "8aef841fc20e918f8d1f97b3c1b3c23fa19c1d15ebc7edd0414b4c3681d218be",
+      "source_sha256": "8aef841fc20e918f8d1f97b3c1b3c23fa19c1d15ebc7edd0414b4c3681d218be",
+      "unchanged": true
+    }
+  ]
+}

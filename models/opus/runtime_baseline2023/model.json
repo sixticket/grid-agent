@@ -1,0 +1,8 @@
+{
+  "provider": "anthropic",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "service_tier": "standard_only",
+  "api_key_env": "ANTHROPIC_API_KEY",
+  "output_tokens": 16000
+}

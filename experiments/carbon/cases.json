@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "campaign": "official_source_research_co2_ceilings",
+  "description": "Ten user-selected region/year research scenarios using officially published allowance budgets, planning constraints, or emissions pathways. These are not a claim of legal compliance or a reproduction of each official planning scenario.",
+  "audit_date": "2026-10-14",
+  "solver_cap_unit": "million metric tonnes of direct operational CO2 per representative 8760-hour year",
+  "short_ton_conversion": {
+    "metric_tonnes_per_US_short_ton": 0.90718474,
+    "formula": "source_value * 0.90718474 / 1000000 = co2_limit_Mt"
+  },
+  "general_mapping": {
+    "adopted_as": "research_annual_dispatch_ceiling",
+    "solver_input": "scenario.assumptions.co2_limit_Mt",
+    "solver_constraint": "sum(dispatch_MWh * asset_emissions_t_per_MWh) <= co2_limit_Mt * 1000000 * hours_modelled / 8760",
+    "emissions_scope": "Direct operational emissions from dispatched existing assets with nonzero inventory emissions factors; lifecycle and external import emissions are excluded.",
+    "policy_mode": "baseline leaves the independent operational_co2_budget constraint active; published-policy constraints are separate.",
+    "feasibility": "An input ceiling does not establish that a feasible design exists. Full 8760-hour runs and shorter proportional-budget diagnostics must be distinguished.",
+    "legal_compliance_claim": false,
+    "input_basis": "2023 uses experiment/<region>; 2030/2035 use weather_prediction/inputs/<year>/<region>, retaining their existing demand, fleet, network and synthetic future weather profiles."
+  },
+  "cases": [
+    {
+      "id": "2023/nyiso",
+      "region": "nyiso",
+      "year": 2023,
+      "co2_limit_Mt": 24.76186511876616,
+      "source": {
+        "title": "RGGI Distribution of 2023 CO2 Allowances",
+        "url": "https://www.rggi.org/sites/default/files/Uploads/Allowance-Tracking/2023_Allowance-Distribution.xlsx",
+        "locator": "sheet1, New York row 14; base budget B14, adjustment C14, adjusted budget D14",
+        "published_date": null,
+        "value": 27295284,
+        "unit": "US short tons CO2/year",
+        "kind": "allowance_base_budget",
+        "reporting_year": 2023,
+        "alternative_not_selected": {
+          "description": "Adjusted new allowance supply after bank adjustment; not interchangeable with the base budget and not a replacement for banked allowances.",
+          "value": 22663873,
+          "unit": "US short tons CO2/year",
+          "converted_MtCO2": 20.56031973489802,
+          "bank_adjustment_allowances": 4631411
+        },
+        "corroboration": {
+          "title": "New York State Register, Notice of Adoption, December 16, 2020",
+          "url": "https://dos.ny.gov/system/files/documents/2021/04/121620-1.pdf",
+          "locator": "printed pp. 5–6 / PDF pp. 11–12",
+          "published_date": "2020-12-16"
+        }
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "experiment/nyiso",
+        "source_scope": "New York CO2 Budget Trading Program covered fossil electricity-generating units.",
+        "model_scope": "NYISO eleven-zone domestic supply counterfactual, without externally fixed import entitlements.",
+        "gas_mapping": "CO2 to CO2; convert US short tons to metric tonnes using the exact factor 0.90718474.",
+        "scope_mapping": "Use the New York base allowance budget as a strict model-wide annual dispatch ceiling. Model assets and regulated-unit coverage are not identical.",
+        "caveats": [
+          "Interstate trading, banked allowances, additional reserve supply, and multiyear compliance are not simulated.",
+          "The annual allowance-allocation budget is not a strict physical annual NYISO emissions limit."
+        ],
+        "weather": {
+          "basis": "Existing 2023 experiment input profiles."
+        }
+      }
+    },
+    {
+      "id": "2030/nyiso",
+      "region": "nyiso",
+      "year": 2030,
+      "co2_limit_Mt": 12.42530840812492,
+      "source": {
+        "title": "New York adopted 6 NYCRR Part 242 Express Terms (2026 amendments)",
+        "url": "https://dec.ny.gov/sites/default/files/2026-08/part242_et_adopted.pdf",
+        "locator": "§242-5.1(d); PDF p. 47 of 84. Short-ton definition: §242-1.2 definition 71, PDF pp. 20–21.",
+        "published_date": null,
+        "value": 13696558,
+        "unit": "US short tons CO2/year",
+        "kind": "allowance_base_budget",
+        "publication_vintage": "2026 adopted amendments; exact publication day not established in the source audit",
+        "effective_date": "2027-01-01",
+        "adoption_status_source": "https://dec.ny.gov/environmental-protection/air-quality/controlling-pollution-from-facilities/regional-greenhouse-gas-initiative"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2030/nyiso",
+        "source_scope": "New York CO2 Budget Trading Program covered fossil electricity-generating units.",
+        "model_scope": "NYISO eleven-zone domestic supply counterfactual, without externally fixed import entitlements.",
+        "gas_mapping": "CO2 to CO2; convert US short tons to metric tonnes using the exact factor 0.90718474.",
+        "scope_mapping": "Use the New York base allowance budget as a strict model-wide annual dispatch ceiling. Model assets and regulated-unit coverage are not identical.",
+        "caveats": [
+          "Interstate trading, banked allowances, additional reserve supply, and multiyear compliance are not simulated.",
+          "The annual allowance-allocation budget is not a strict physical annual NYISO emissions limit."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2030,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2030/nyiso/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/nyiso_2030_official"
+      }
+    },
+    {
+      "id": "2035/nyiso",
+      "region": "nyiso",
+      "year": 2035,
+      "co2_limit_Mt": 3.55008785741148,
+      "source": {
+        "title": "New York adopted 6 NYCRR Part 242 Express Terms (2026 amendments)",
+        "url": "https://dec.ny.gov/sites/default/files/2026-08/part242_et_adopted.pdf",
+        "locator": "§242-5.1(i); PDF p. 47 of 84. Short-ton definition: §242-1.2 definition 71, PDF pp. 20–21.",
+        "published_date": null,
+        "value": 3913302,
+        "unit": "US short tons CO2/year",
+        "kind": "allowance_base_budget",
+        "publication_vintage": "2026 adopted amendments; exact publication day not established in the source audit",
+        "effective_date": "2027-01-01",
+        "adoption_status_source": "https://dec.ny.gov/environmental-protection/air-quality/controlling-pollution-from-facilities/regional-greenhouse-gas-initiative"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2035/nyiso",
+        "source_scope": "New York CO2 Budget Trading Program covered fossil electricity-generating units.",
+        "model_scope": "NYISO eleven-zone domestic supply counterfactual, without externally fixed import entitlements.",
+        "gas_mapping": "CO2 to CO2; convert US short tons to metric tonnes using the exact factor 0.90718474.",
+        "scope_mapping": "Use the New York base allowance budget as a strict model-wide annual dispatch ceiling. Model assets and regulated-unit coverage are not identical.",
+        "caveats": [
+          "Interstate trading, banked allowances, additional reserve supply, and multiyear compliance are not simulated.",
+          "The annual allowance-allocation budget is not a strict physical annual NYISO emissions limit."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2035,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2035/nyiso/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/nyiso_2035_official"
+      }
+    },
+    {
+      "id": "2030/miso",
+      "region": "miso",
+      "year": 2030,
+      "co2_limit_Mt": 200.03334250021584,
+      "source": {
+        "title": "MISO Futures 1–4 Preliminary Results, September 24, 2025 workshop (updated September 23)",
+        "url": "https://cdn.misoenergy.org/20250924%20Workshop%20Item%2002%20Futures%201-4%20Preliminary%20Results%20update%2020250923719306.pdf",
+        "locator": "Slide 66, Future 2 MISO aggregate constraint, year 2030; use exact table value rather than rounded slide 65 chart.",
+        "published_date": "2025-09-24",
+        "value": 220499016,
+        "unit": "US short tons CO2/year",
+        "kind": "planning_model_constraint",
+        "document_updated_date": "2025-09-23",
+        "scenario": "Future 2"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2030/miso",
+        "source_scope": "MISO system-level Future 2 aggregate of member emissions constraints.",
+        "model_scope": "Six model groups covering the ten MISO LRZs.",
+        "gas_mapping": "CO2 to CO2; convert US short tons to metric tonnes using the exact factor 0.90718474.",
+        "scope_mapping": "Apply the system aggregate to model-wide annual direct dispatch emissions.",
+        "caveats": [
+          "The cap comes from Future 2 of the 2025 planning study; demand comes from 2026 LTLF Current Trajectory. This combines official sources and does not reproduce the complete Future 2 scenario.",
+          "Separate state and unit constraints in the official study are not recreated by the aggregate cap.",
+          "This is an official planning-model input constraint, not one statutory MISO-wide annual limit."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2030,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2030/miso/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/miso_2030_baseline"
+      }
+    },
+    {
+      "id": "2035/miso",
+      "region": "miso",
+      "year": 2035,
+      "co2_limit_Mt": 164.6418377470944,
+      "source": {
+        "title": "MISO Futures 1–4 Preliminary Results, September 24, 2025 workshop (updated September 23)",
+        "url": "https://cdn.misoenergy.org/20250924%20Workshop%20Item%2002%20Futures%201-4%20Preliminary%20Results%20update%2020250923719306.pdf",
+        "locator": "Slide 66, Future 2 MISO aggregate constraint, year 2035; use exact table value rather than rounded slide 65 chart.",
+        "published_date": "2025-09-24",
+        "value": 181486560,
+        "unit": "US short tons CO2/year",
+        "kind": "planning_model_constraint",
+        "document_updated_date": "2025-09-23",
+        "scenario": "Future 2"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2035/miso",
+        "source_scope": "MISO system-level Future 2 aggregate of member emissions constraints.",
+        "model_scope": "Six model groups covering the ten MISO LRZs.",
+        "gas_mapping": "CO2 to CO2; convert US short tons to metric tonnes using the exact factor 0.90718474.",
+        "scope_mapping": "Apply the system aggregate to model-wide annual direct dispatch emissions.",
+        "caveats": [
+          "The cap comes from Future 2 of the 2025 planning study; demand comes from 2026 LTLF Current Trajectory. This combines official sources and does not reproduce the complete Future 2 scenario.",
+          "Separate state and unit constraints in the official study are not recreated by the aggregate cap.",
+          "This is an official planning-model input constraint, not one statutory MISO-wide annual limit."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2035,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2035/miso/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/miso_2035_baseline"
+      }
+    },
+    {
+      "id": "2030/south_africa",
+      "region": "south_africa",
+      "year": 2030,
+      "co2_limit_Mt": 168,
+      "source": {
+        "title": "South Africa Integrated Resource Plan 2025, Government Gazette 53596, Notice 6767",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/202510/53596gon6767.pdf",
+        "locator": "Figure 21, printed p. 35 / PDF p. 44, balanced-plan electricity CO2 trajectory, 2030.",
+        "published_date": "2025-10-28",
+        "value": 168,
+        "unit": "MtCO2/year",
+        "kind": "planning_emissions_pathway"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2030/south_africa",
+        "source_scope": "South African electricity-sector CO2 emissions in the IRP 2025 balanced plan.",
+        "model_scope": "Ten South African model zones; demand uses ESRG/University of Cape Town spatialised IRP REF, without exports.",
+        "gas_mapping": "Published MtCO2 is adopted directly as the numerical MtCO2 dispatch ceiling.",
+        "scope_mapping": "Research adoption of the balanced-plan emissions trajectory as a model-wide hard annual ceiling.",
+        "caveats": [
+          "The published value is an emissions pathway/output, not a verified legal annual emissions cap.",
+          "Demand and operating assumptions do not reproduce the entire official IRP 2025 balanced plan.",
+          "Do not substitute the older IRP 2019 approximately 275 MtCO2e planning constraint, or the separate 2030 145 Mt NDC electricity apportionment."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2030,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2030/south_africa/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "corrections/20260925-v2/packs/south_africa_2030"
+      }
+    },
+    {
+      "id": "2035/south_africa",
+      "region": "south_africa",
+      "year": 2035,
+      "co2_limit_Mt": 142,
+      "source": {
+        "title": "South Africa Integrated Resource Plan 2025, Government Gazette 53596, Notice 6767",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/202510/53596gon6767.pdf",
+        "locator": "Figure 21, printed p. 35 / PDF p. 44, balanced-plan electricity CO2 trajectory, 2035.",
+        "published_date": "2025-10-28",
+        "value": 142,
+        "unit": "MtCO2/year",
+        "kind": "planning_emissions_pathway"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2035/south_africa",
+        "source_scope": "South African electricity-sector CO2 emissions in the IRP 2025 balanced plan.",
+        "model_scope": "Ten South African model zones; demand uses ESRG/University of Cape Town spatialised IRP REF, without exports.",
+        "gas_mapping": "Published MtCO2 is adopted directly as the numerical MtCO2 dispatch ceiling.",
+        "scope_mapping": "Research adoption of the balanced-plan emissions trajectory as a model-wide hard annual ceiling.",
+        "caveats": [
+          "The published value is an emissions pathway/output, not a verified legal annual emissions cap.",
+          "Demand and operating assumptions do not reproduce the entire official IRP 2025 balanced plan.",
+          "Do not substitute the older IRP 2019 approximately 275 MtCO2e planning constraint, or the separate 2030 145 Mt NDC electricity apportionment."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2035,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2035/south_africa/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/south_africa_2035_baseline"
+      }
+    },
+    {
+      "id": "2030/mexico",
+      "region": "mexico",
+      "year": 2030,
+      "co2_limit_Mt": 119,
+      "source": {
+        "title": "Mexico Programa Sectorial de Energía 2025–2030 (PROSENER)",
+        "url": "https://sidof.segob.gob.mx/notas/docFuente/5776838",
+        "locator": "Electricity-generation emissions paragraph: net-injected-electricity emissions peak in 2027, then decline 23.9% from 156.42 to 119 MtCO2e by the 2030 planning horizon.",
+        "published_date": "2025-12-22",
+        "value": 119,
+        "unit": "MtCO2e/year",
+        "kind": "planning_emissions_projection"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2030/mexico",
+        "source_scope": "SEN greenhouse-gas emissions associated with net injected electricity.",
+        "model_scope": "Nine control regions, including Baja California and Baja California Sur; SIMUL/Mulege excluded.",
+        "gas_mapping": "CO2e-to-direct-CO2 numerical proxy: impose the published 119 MtCO2e number as 119 Mt of modelled direct CO2. This is a declared approximation, not a gas conversion or an official CO2-only cap.",
+        "scope_mapping": "Use the national net-injected-electricity pathway as a research ceiling for the nine-region model, without proportional rescaling.",
+        "caveats": [
+          "The source is a planned emissions outcome, not a verified legal annual electricity-sector cap.",
+          "Demand uses PRODESEN 2024–2038 while the emissions pathway uses PROSENER 2025–2030.",
+          "The model excludes 186 GWh of SIMUL/Mulege demand from the published 410800 GWh SEN total for 2030; no emissions allocation to the excluded subsystem is inferred.",
+          "Non-CO2 greenhouse gases and emissions from external electricity imports are not separately represented."
+        ],
+        "demand_scope_check": {
+          "excluded_SIMUL_GWh": 186,
+          "published_SEN_GWh": 410800
+        },
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2030,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2030/mexico/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/mexico_2030_baseline"
+      }
+    },
+    {
+      "id": "2030/brazil",
+      "region": "brazil",
+      "year": 2030,
+      "co2_limit_Mt": 27,
+      "source": {
+        "title": "Brazil EPE/MME Plano Decenal de Expansão de Energia 2035, approved final report",
+        "url": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/Documents/PDE%202035_Relat%C3%B3rio%20Final_Aprovado.pdf",
+        "locator": "Table 10-1, p. 393, SIN row, 2030; scope/hydrology discussion pp. 394–395 and explicit absence of model GHG limits p. 396.",
+        "published_date": null,
+        "value": 27,
+        "unit": "MtCO2e/year",
+        "kind": "planning_emissions_projection",
+        "approved_date": "2026-06-30",
+        "publication_vintage": "2026 final approved report",
+        "approval_source": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2030/brazil",
+        "source_scope": "Brazil Sistema Interligado Nacional (SIN), excluding isolated systems and separate autoproduction.",
+        "model_scope": "Four SIN subsystem load regions N, NE, SE and S; Itaipu Paraguayan-side units placed in SE.",
+        "gas_mapping": "CO2e-to-direct-CO2 numerical proxy: impose the published SIN MtCO2e number as the same number of Mt of modelled direct CO2. This is a declared approximation, not a gas conversion or an official CO2-only cap.",
+        "scope_mapping": "Use the SIN row, not the whole-electricity-sector totals (59 MtCO2e in 2030 and 62 in 2035).",
+        "caveats": [
+          "PDE 2035 states that the planning model does not impose explicit GHG emissions targets or limits; these projections become constraints only in this research experiment.",
+          "Forecasts assume average hydrology; drought can materially increase projected emissions. The model retains the existing 2023-derived hydro-energy assumptions and uses its weather_prediction target-year synthetic solar/wind profiles.",
+          "Non-CO2 greenhouse gases and external import emissions are not separately represented."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2030,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2030/brazil/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/brazil_2030_baseline"
+      }
+    },
+    {
+      "id": "2035/brazil",
+      "region": "brazil",
+      "year": 2035,
+      "co2_limit_Mt": 29,
+      "source": {
+        "title": "Brazil EPE/MME Plano Decenal de Expansão de Energia 2035, approved final report",
+        "url": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/Documents/PDE%202035_Relat%C3%B3rio%20Final_Aprovado.pdf",
+        "locator": "Table 10-1, p. 393, SIN row, 2035; scope/hydrology discussion pp. 394–395 and explicit absence of model GHG limits p. 396.",
+        "published_date": null,
+        "value": 29,
+        "unit": "MtCO2e/year",
+        "kind": "planning_emissions_projection",
+        "approved_date": "2026-06-30",
+        "publication_vintage": "2026 final approved report",
+        "approval_source": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035"
+      },
+      "mapping": {
+        "adopted_as": "research_annual_dispatch_ceiling",
+        "base_pack": "weather_prediction/inputs/2035/brazil",
+        "source_scope": "Brazil Sistema Interligado Nacional (SIN), excluding isolated systems and separate autoproduction.",
+        "model_scope": "Four SIN subsystem load regions N, NE, SE and S; Itaipu Paraguayan-side units placed in SE.",
+        "gas_mapping": "CO2e-to-direct-CO2 numerical proxy: impose the published SIN MtCO2e number as the same number of Mt of modelled direct CO2. This is a declared approximation, not a gas conversion or an official CO2-only cap.",
+        "scope_mapping": "Use the SIN row, not the whole-electricity-sector totals (59 MtCO2e in 2030 and 62 in 2035).",
+        "caveats": [
+          "PDE 2035 states that the planning model does not impose explicit GHG emissions targets or limits; these projections become constraints only in this research experiment.",
+          "Forecasts assume average hydrology; drought can materially increase projected emissions. The model retains the existing 2023-derived hydro-energy assumptions and uses its weather_prediction target-year synthetic solar/wind profiles.",
+          "Non-CO2 greenhouse gases and external import emissions are not separately represented."
+        ],
+        "weather": {
+          "model": "MPI-ESM1-2-HR",
+          "scenario": "ssp245",
+          "projection_year": 2035,
+          "source_kind": "synthetic_hourly_nasa_daily_with_era5_template",
+          "climate_manifest": "weather_prediction/inputs/2035/brazil/climate_manifest.json",
+          "note": "Synthetic target-year daily climate with ERA5 2023 intraday templates; model time axis remains 8760 hours in 2023. This is a projected weather realization, not observed future weather."
+        },
+        "weather_pack_upstream_source": "prediction_local/packs/brazil_2035_baseline"
+      }
+    }
+  ]
+}

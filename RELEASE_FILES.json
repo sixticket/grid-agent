@@ -1,0 +1,1352 @@
+{
+  "schema_version": 2,
+  "prepared_date": "2026-11-03",
+  "scope": "Every source-tree and working-manuscript file except RELEASE_FILES.json itself and Git internals; supporting research assets have separate manifests.",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "6652e6d437ffc5134810d74ad92cf0da0d1fc435adcd0bbf414320bb215f0583",
+      "bytes": 260
+    },
+    {
+      "path": ".github/workflows/offline-checks.yml",
+      "sha256": "31ce32bae2bbb466d234b8daeb0c6c8ff6cfbc97e5f9fbd023909412a52cbaaa",
+      "bytes": 580
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6e8280c1b39a7c0198b42bfe9681c37158d74aee8c41c0822a7717bec63c4b43",
+      "bytes": 1215
+    },
+    {
+      "path": "README.md",
+      "sha256": "8d9592aaf7637eb65a214be52c61898472111416692a3e6d98027bac9047850e",
+      "bytes": 5554
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "a8c113aade857b8c6d1fdcbd0fa2a0547e6948af15d5d4f6617691a23143718c",
+      "bytes": 90776
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "c24e3ad9fbfe800381562c2b071a351a34af2852a413be3957e7465fe1bf54b3",
+      "bytes": 1944
+    },
+    {
+      "path": "analysis/README.md",
+      "sha256": "619b7ef875d4cda9d8616eb5f21cd3021b074cd83945e8bab20e5c0a9ae79482",
+      "bytes": 5388
+    },
+    {
+      "path": "analysis/__init__.py",
+      "sha256": "78c617c9036b68555956dcec11639a5a1363bc47b4460bd19a10159fb231b39d",
+      "bytes": 78
+    },
+    {
+      "path": "analysis/analyze_rounds.py",
+      "sha256": "5566f43e571faa7078e4891df40fd72bb3a18e1f5e0f4202ad9add8b0f7e3a07",
+      "bytes": 11529
+    },
+    {
+      "path": "analysis/analyze_tokens.py",
+      "sha256": "71e9b88ea5906cf08e62944b8a9711aaf314d2e7a4949abf199da5eadc9329a4",
+      "bytes": 5847
+    },
+    {
+      "path": "analysis/build_main_results.py",
+      "sha256": "0bd49de99cb8904c97a5a3dcf3a2bb0f34db1b8dbca4e5432633176505c7fdd1",
+      "bytes": 8432
+    },
+    {
+      "path": "analysis/build_search_effort.py",
+      "sha256": "aca316574929b779145017c085d29f78e4a4b0685f030bada0eb393cfe04dc60",
+      "bytes": 5858
+    },
+    {
+      "path": "analysis/build_weather_results.py",
+      "sha256": "3bc49599bb519ba63d24f3eca387a7b10267339df3f28aac73eb68fe501fc16d",
+      "bytes": 26685
+    },
+    {
+      "path": "analysis/carbon/README.md",
+      "sha256": "0a9d5166be4fc85934ef7361efdf8e88e0a5f8bb5eccb70b1d62a8ec45f3bc47",
+      "bytes": 2257
+    },
+    {
+      "path": "analysis/carbon/archive_paths.py",
+      "sha256": "a8e8a2917c2635856c83fb57abec705b47eacee9ff083976d6b0eb690488fe99",
+      "bytes": 1651
+    },
+    {
+      "path": "analysis/carbon/build_carbon_expert_comparison.py",
+      "sha256": "092522a322acad2695e64bf91089bbaed5d1792465caa1cac22e9014a21288a8",
+      "bytes": 7102
+    },
+    {
+      "path": "analysis/carbon/build_carbon_figures.py",
+      "sha256": "f0206e174004dd464758cdb5078412a3a339355aa56ffd5f5881aa9a4c1caabe",
+      "bytes": 16413
+    },
+    {
+      "path": "analysis/carbon/build_combined_grid_carbon.py",
+      "sha256": "f42dfb2c23a3ca6005e6fb834eb9b9e3ad298f5009c77e80aef73592346a99fc",
+      "bytes": 17757
+    },
+    {
+      "path": "analysis/carbon/geo_carbon.py",
+      "sha256": "4621f37324dc98af82cbbb5c0c8b7ca055a4ee7c52771bcc9e1a6afad1808bee",
+      "bytes": 19710
+    },
+    {
+      "path": "analysis/cohort_specification.json",
+      "sha256": "bfafce83b92d7bce92e481a13f05cb54b4f80321700ae5646ed509aee0f399ac",
+      "bytes": 1426
+    },
+    {
+      "path": "analysis/committed_evidence.py",
+      "sha256": "9fbf2e7c37c811705566b44adb44b7152fe8cd31d0933f203dfe65e835275311",
+      "bytes": 7165
+    },
+    {
+      "path": "analysis/common.py",
+      "sha256": "72b38e03e3408cb2d7667d6b1fde18a0bd38a0b7912bc0fe0d593bb4e227cb3f",
+      "bytes": 5090
+    },
+    {
+      "path": "analysis/manuscript/build_expert_comparison.py",
+      "sha256": "884d13fd9d0e72c752090b344747810f3ac58cde32e02901ccd7a0eb269c6a45",
+      "bytes": 11644
+    },
+    {
+      "path": "analysis/manuscript/build_figures.py",
+      "sha256": "b93dd8e84881aeb9eba84bac0d56a1a5e902dd03156524a0148ece5787b39593",
+      "bytes": 12722
+    },
+    {
+      "path": "analysis/manuscript/build_framework_artwork.py",
+      "sha256": "ae0f8f58610d13d9b6fd2d22e1ee5cfe62ebf16ee326f4840434a6dc28c2a846",
+      "bytes": 3636
+    },
+    {
+      "path": "analysis/manuscript/build_framework_ppt.mjs",
+      "sha256": "fd4dbdf5e8b604529a73f54527d18dae802e62b154d887a56ab7b0dd1d632732",
+      "bytes": 16640
+    },
+    {
+      "path": "analysis/manuscript/build_geographic_figures.py",
+      "sha256": "bdf3c15bfcc75dc4a455cf3af546e297b9f1febe727c3712f3acca6f9877eacb",
+      "bytes": 14704
+    },
+    {
+      "path": "analysis/manuscript/build_professional_artwork.py",
+      "sha256": "2e41d1daef667f31e5a1127387a368d2fa59e6cc86ef1ee9887116ff735bc6a7",
+      "bytes": 17892
+    },
+    {
+      "path": "analysis/manuscript/build_publication_figures.py",
+      "sha256": "0f4fa3860917c4a89f217e05565e857159905a0cea9aeaf021823e596fda0858",
+      "bytes": 22452
+    },
+    {
+      "path": "analysis/manuscript/extract_best_regional_designs.py",
+      "sha256": "f43b954ce097fdbc2a7575bdb79c31d50d5b00496583e60300156662d204d8c7",
+      "bytes": 6004
+    },
+    {
+      "path": "analysis/manuscript/prepare_framework_geometry.py",
+      "sha256": "84aea3fab9a4379833ba7ada5e9bcbcb8976406109d4ff8617a162ffd6be2dc4",
+      "bytes": 5852
+    },
+    {
+      "path": "analysis/render_results_tables.py",
+      "sha256": "8049f0a5b915487f206dfbd958dd4bfdb3daa0417aa5ba387c6b924485228bee",
+      "bytes": 4524
+    },
+    {
+      "path": "analysis/requirements.txt",
+      "sha256": "92a7df49c7c5ab46ae007fa2be41926ad2c198ad5daac66124fb138465dfb3a7",
+      "bytes": 119
+    },
+    {
+      "path": "analysis/select_reported_cohort.py",
+      "sha256": "e7228591357687cd52bae8625b6b14a57424b746dbacad73b439ef67d16e7db9",
+      "bytes": 3112
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "sha256": "22e4ee4ad2f6d9e79fbb4e478c46165ed7a02beffb85026768c981666765aa2d",
+      "bytes": 21507
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "sha256": "7afed0f033446c847cc9cc434c310421b4111c041db55a368c9a7d1c06791860",
+      "bytes": 5046
+    },
+    {
+      "path": "docs/GITHUB.md",
+      "sha256": "a9217b18559d89a491f948d08888b806be9966b2b19d3e08cc8369cba9c853eb",
+      "bytes": 904
+    },
+    {
+      "path": "docs/INPUT_DATA.md",
+      "sha256": "10ade915c723658e5fba8f7a82c4c128e6aea176898cbf57772a6f78c35e0885",
+      "bytes": 19514
+    },
+    {
+      "path": "docs/REFERENCE_COHORT.md",
+      "sha256": "1a0257661761305ffcda95a20a967309585364f99f85bbc2268fa927e57324fa",
+      "bytes": 5722
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "sha256": "de40efb8cc42722cf73449eb66061dc0b98bbec14230223708cc92e724e96bbe",
+      "bytes": 3125
+    },
+    {
+      "path": "docs/RESEARCH_PACKAGE.md",
+      "sha256": "1222e955ccc300a7ea81a9ce0a3833eb955601784f8ec8a5de2e9cacdb67a0d6",
+      "bytes": 4186
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "2cead2d135455be275bc6e56142d51557d40fe44ff4e60952f4ee625d7ba6487",
+      "bytes": 1184
+    },
+    {
+      "path": "experiments/carbon/README.md",
+      "sha256": "ddab48aff77db19a33b0a99c1920d205ac7f7a4599ab9208436e057956dd515f",
+      "bytes": 1769
+    },
+    {
+      "path": "experiments/carbon/archive_controller/pause_after_current_job.py",
+      "sha256": "3fe42dbd4746c12c448dfac8233ed8cb7b67a176f66e80d7b00d4ae63d03d9a2",
+      "bytes": 16320
+    },
+    {
+      "path": "experiments/carbon/archive_controller/pause_on_result.py",
+      "sha256": "7122139d473c6410cf281455e5a45432e2aebe042655706280281c060dfdbbf0",
+      "bytes": 8691
+    },
+    {
+      "path": "experiments/carbon/archive_controller/run_campaign.py",
+      "sha256": "7b8e29e5fa4c32bb1c13ea9dfeb412a1a31ce0f1ce6bbbe2056ef170b9fcf8d7",
+      "bytes": 17707
+    },
+    {
+      "path": "experiments/carbon/archive_controller/sequence_queue.py",
+      "sha256": "16919748eb927cf21f783c39c2d9e7fb158d4ae215705db626bea4a1d41fd935",
+      "bytes": 13964
+    },
+    {
+      "path": "experiments/carbon/archive_controller/worker.py",
+      "sha256": "b2db8b21df5c37a8930e1f905384c4586cf20f84abf1e04d91523d98cc870813",
+      "bytes": 15633
+    },
+    {
+      "path": "experiments/carbon/cases.json",
+      "sha256": "a591e692170dab64c4524d47d42fc32b4f44b39c178d58d1e2a6770789d8892b",
+      "bytes": 26126
+    },
+    {
+      "path": "experiments/carbon/co2_adapter.py",
+      "sha256": "a800d29e514e3a51bce3c8646cd1fdd2b2186be3c9f0275a316f3a7d70c3bef7",
+      "bytes": 12265
+    },
+    {
+      "path": "manuscript/1_Nature.tex",
+      "sha256": "ae49d7034f264c290b958607c52d48f78cbcdc52af74a266086a625d979c2da6",
+      "bytes": 156675
+    },
+    {
+      "path": "manuscript/2_Cover_Letter_Nature.tex",
+      "sha256": "50a2ad652562f34ad503d6678e6067e75ed9b8eaa11875b85ae6f4d0f3379678",
+      "bytes": 3007
+    },
+    {
+      "path": "manuscript/README.md",
+      "sha256": "9f8ae3acd3f7adbac0cb4d022a97307bf946ce58e72fbf4b54f81f0b5b6e0e35",
+      "bytes": 771
+    },
+    {
+      "path": "manuscript/figure_carbon/carbon_expert_comparison_table.tex",
+      "sha256": "c3fba6e3ae28bf62ff45d1cde92dd6616709c20ac13fa13b6ccdea3efb215e8d",
+      "bytes": 1662
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon.pdf",
+      "sha256": "8ef6c737d02d2674cbe5a7f5300ab5bb9e26d338789837c6a8d27caa72dc5ec0",
+      "bytes": 394707
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon.png",
+      "sha256": "34bfd863b885bc8dce808c9ab78bbac2a0c53214044674141c744b7dbfe7827c",
+      "bytes": 615398
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon.svg",
+      "sha256": "15a7d9409f0d190d46d637b6c36ae7862d991d45d693b1f80b7d050a8a68f9e7",
+      "bytes": 1224471
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon_atlas.pdf",
+      "sha256": "1ef828022d357031b8a795f7b16c83eb197bbf6d73da05f2db069859e73dc93d",
+      "bytes": 872293
+    },
+    {
+      "path": "manuscript/figure_carbon/combined_grid_carbon_captions.tex",
+      "sha256": "9f52b539a2d593120f2adf2eba15490376ac1631fe978e4611ebff2fe564cc9e",
+      "bytes": 2172
+    },
+    {
+      "path": "manuscript/figure_carbon/fig2_carbon_outcomes.pdf",
+      "sha256": "11e8f672210cbf9e6201f1915ecef8bac6a9ebe5ae7d156c8ef53d9d8a120de5",
+      "bytes": 24417
+    },
+    {
+      "path": "manuscript/figure_carbon/fig3_carbon_portfolios.pdf",
+      "sha256": "02ede8858f830c95bfd22e8d92a0dc5fc2a756878f78e6fbf4329d2aa3b1cd88",
+      "bytes": 30014
+    },
+    {
+      "path": "manuscript/figure_carbon/fig3_carbon_portfolios.png",
+      "sha256": "bd4e074dea15bc09536597fd6fd05c204b598c66d6d0f3eefda15c2975c1779d",
+      "bytes": 231001
+    },
+    {
+      "path": "manuscript/figure_carbon/fig3_carbon_portfolios.svg",
+      "sha256": "3484d88ca1fc4bf036e68149b2cc9edf0659eea3e6f8f40f9656d808838be0ba",
+      "bytes": 53081
+    },
+    {
+      "path": "manuscript/figure_carbon/fig4_carbon_search.pdf",
+      "sha256": "43d286c126167ed6a438504aa52ffab1a46e0d563d47911d88bc8e15a1d12b38",
+      "bytes": 27787
+    },
+    {
+      "path": "manuscript/figure_carbon/figS1_carbon_vs_loose_cap.pdf",
+      "sha256": "fa648a5de735b7855c99401913949f43923e61dbc05d34b380dfdc428e7d7ffd",
+      "bytes": 30754
+    },
+    {
+      "path": "manuscript/figure_carbon/figS2_carbon_cost_intervals.pdf",
+      "sha256": "2b35f8d2b753d95a3f86c95142aaf002230fb4f762a05d11aacd37d7e8601fe1",
+      "bytes": 22115
+    },
+    {
+      "path": "manuscript/figure_carbon/geographic_carbon_atlas.pdf",
+      "sha256": "09bf5bb547afc961bd36fb0b8e58a39ce30cc329fd76cbb4a491303488f5a2d1",
+      "bytes": 495316
+    },
+    {
+      "path": "manuscript/figure_carbon/geographic_carbon_overview.pdf",
+      "sha256": "215a125ac065f533435e074b9d7ef4e0e82f1a3dbd0de248b3c7f0d5ece07a36",
+      "bytes": 413407
+    },
+    {
+      "path": "manuscript/figures/fig1_framework.pdf",
+      "sha256": "9de08d45aaf1a982c650b821d9c41abbaca18ec09f924cc85377ba0316f47099",
+      "bytes": 747854
+    },
+    {
+      "path": "manuscript/figures/fig2_geographic_planning.pdf",
+      "sha256": "98c5b1fc972ded2496295ef9a911c867447d7c0f9ea136442572170db66b4482",
+      "bytes": 329839
+    },
+    {
+      "path": "manuscript/figures/fig2_model_comparison.pdf",
+      "sha256": "55b48398d60884f3cdaea418e3c8e03ef066fc7d5a213a1fba036bfbf1a3ebc3",
+      "bytes": 47873
+    },
+    {
+      "path": "manuscript/figures/fig3_ercot_verified_expansion.pdf",
+      "sha256": "abd1e3d7176419d91be872dcf1f3549d5b061dda33aa7f1521770553ea616ffe",
+      "bytes": 76488
+    },
+    {
+      "path": "manuscript/figures/fig3_weather_comparison.pdf",
+      "sha256": "388b2c2384e7dc65af7e8136ac95290a7e4a0da2d48f2cd9040021b8dc4ee830",
+      "bytes": 44598
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/australia.pdf",
+      "sha256": "7f8c53141a97cc3a6a2c71afad8bf22afea4135ca520b2745bb53af6d763279e",
+      "bytes": 70820
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/brazil.pdf",
+      "sha256": "b2403cc47f07aabc09e7c67747ff02fd90627a0a7f54065e645a2bbdcc8d7bb9",
+      "bytes": 140533
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/ercot.pdf",
+      "sha256": "ad6cc52f93c174b6186a1a84490fde5ada84df79efb8527490425ce179f49463",
+      "bytes": 78737
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/mexico.pdf",
+      "sha256": "ce49373b0b75ff60dd5012427bea0347414369404a666a6fbf9e495437df799b",
+      "bytes": 82239
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/miso.pdf",
+      "sha256": "619275d4a3ee17420628253480e2f6c2b397ac65ecb9e941b16777f0696ddd35",
+      "bytes": 122598
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/new_zealand.pdf",
+      "sha256": "df48d1017e5177de2359f6cce3eb4f5604c4cddbe5b629e90521aa80e1474fb2",
+      "bytes": 57371
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/nyiso.pdf",
+      "sha256": "a47f46e38736195f03550a0e6ec0a0aeb300a1f2b2397cf3828eedc63866310b",
+      "bytes": 81309
+    },
+    {
+      "path": "manuscript/figures/regional_atlas/south_africa.pdf",
+      "sha256": "5e5ed08c1abe3187973c221e9ae71b1cec5987ad64d2777cf539d693b16e5450",
+      "bytes": 75127
+    },
+    {
+      "path": "manuscript/sn-bibliography.bib",
+      "sha256": "55ce8af12504c25b5295bbc9dc5676a14c447c0393d6c65ad83857bafb8b11ee",
+      "bytes": 23185
+    },
+    {
+      "path": "manuscript/sn-jnl.cls",
+      "sha256": "3c92b1a4e4d52b1d0713170615159c314415c5a020364f8a28ca3026ca13d7c6",
+      "bytes": 55859
+    },
+    {
+      "path": "manuscript/sn-nature.bst",
+      "sha256": "8aef841fc20e918f8d1f97b3c1b3c23fa19c1d15ebc7edd0414b4c3681d218be",
+      "bytes": 37671
+    },
+    {
+      "path": "models/legacy/qwen/README.md",
+      "sha256": "7b8eb3200a18e5aa41a15409d1fd0a330a940098fefa6f57288d567cc46dbc81",
+      "bytes": 877
+    },
+    {
+      "path": "models/legacy/qwen/adapters/llama_responses.py",
+      "sha256": "6d5f9358dc446edfc78b180616c898057a4f6ef8cc088c80de1622ee496b7bf8",
+      "bytes": 5858
+    },
+    {
+      "path": "models/legacy/qwen/adapters/local_resume_chat.py",
+      "sha256": "064e26932a8423d509fa454efed7a08d977edd6076e82a35be841646bf09cc40",
+      "bytes": 3311
+    },
+    {
+      "path": "models/legacy/qwen/model.json",
+      "sha256": "38f22ad8640753f714b6214fbeb3c9a144772e29739538ea0e864d26cee563f5",
+      "bytes": 844
+    },
+    {
+      "path": "models/legacy/qwen/requirements-cluster.lock.txt",
+      "sha256": "be23552b1bbf64cd59378fc42a44e766db2a113e8f74bd02b3988db1605444ea",
+      "bytes": 4878
+    },
+    {
+      "path": "models/legacy/qwen/requirements-scientific.txt",
+      "sha256": "cbe1e4d8cfb2feca8493adcdc9d183fa33b86de0450453f06a4f64bcd6b3c7c8",
+      "bytes": 430
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/agent_contract.py",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "bytes": 1954
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/distribution.py",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "bytes": 12937
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/exploration.py",
+      "sha256": "1ea19602f64a9aa53afe6c90fd6aeedf6ffb61901b766d858c4f9c3e0bcbc7dc",
+      "bytes": 2373
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/extensions.py",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "bytes": 4380
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/multi_agent.py",
+      "sha256": "0c97fe8ae6c722d3e505ffa6a66de8ce87980bf4f41d23831dfafdb72d8d299b",
+      "bytes": 25814
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/planning.py",
+      "sha256": "b434c8e660ec2af8521c92c32c271fb537a1bc453fd7834c00f896daeff3bba4",
+      "bytes": 32924
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/policy.py",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "bytes": 2585
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/procedure_graph.py",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "bytes": 11077
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/providers.py",
+      "sha256": "67054e48c3bbd1109259ceed9337c4cd224c91fe86000d674193c54cdc05d9ff",
+      "bytes": 9212
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/recovery.py",
+      "sha256": "ecf63ab83331e4be3e29db916e808583a21fdbfc3c72ca9e39079050c610fa63",
+      "bytes": 10968
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/reporting.py",
+      "sha256": "15038135fc6f2584aaf2f380875be0ff8fb138a8b5ec261e9ac73b158b7a56d2",
+      "bytes": 4605
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/scenario_core.py",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "bytes": 5360
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/simulator.py",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "bytes": 86
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/single_agent.py",
+      "sha256": "753f1dc4d5c5bb086ffe9ebaba1f26df89741259dccfd50cb0b05bd41b921a0e",
+      "bytes": 12993
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/engine/transmission.py",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "bytes": 47174
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/requirements.lock.txt",
+      "sha256": "5953ffe1c8adcdca021d7481046593e9acc320f8d55aa2da19a3f97dea2520ed",
+      "bytes": 1305
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/requirements.txt",
+      "sha256": "cbe1e4d8cfb2feca8493adcdc9d183fa33b86de0450453f06a4f64bcd6b3c7c8",
+      "bytes": 430
+    },
+    {
+      "path": "models/legacy/qwen/runtime_original/run.py",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "bytes": 5229
+    },
+    {
+      "path": "models/opus/README.md",
+      "sha256": "2fe2875a420c2a624bbf084bb9a175272d8fe3335caa1b402ca790b6e17ad1f1",
+      "bytes": 1689
+    },
+    {
+      "path": "models/opus/adapters/request_retry.py",
+      "sha256": "85c588177dc1357a2b232c4bf432c8c6e2684e987e2f9dba091cb6aeb016dba2",
+      "bytes": 9044
+    },
+    {
+      "path": "models/opus/campaign_source/check_api.py",
+      "sha256": "2054287ce9f940791d345f843a52c5a28be24954cf31645723174115f4fe3083",
+      "bytes": 6016
+    },
+    {
+      "path": "models/opus/campaign_source/preflight.py",
+      "sha256": "85cbab01889c4e01ccf0fc5b60e8030cbea0832b064dfaaa8963fea55a9c940e",
+      "bytes": 16226
+    },
+    {
+      "path": "models/opus/campaign_source/run_campaign.py",
+      "sha256": "1925591db7c6c6fd3f82189b56b7904a4c78c4f352634ca87c9ac41a9ed37ef6",
+      "bytes": 17546
+    },
+    {
+      "path": "models/opus/campaign_source/worker.py",
+      "sha256": "436806f25ec499c76c6c94e939f39ad88b23ade4a2002a75dfe6301e8d0379a0",
+      "bytes": 6295
+    },
+    {
+      "path": "models/opus/climate_adapter.py",
+      "sha256": "8e19661415ca7b1b7e8b518bb9967d839cb701fcf2e6159fd92ffba4f53962d5",
+      "bytes": 7720
+    },
+    {
+      "path": "models/opus/model.json",
+      "sha256": "6a96d1cc4e5b54c24fff261308a84b263c3b2eef72239ab1493112c7a887de0c",
+      "bytes": 179
+    },
+    {
+      "path": "models/opus/opus_protocol.py",
+      "sha256": "264254e21f43769d67dd012295105a639e25c9592c66048826f2e0a813ab66e0",
+      "bytes": 6983
+    },
+    {
+      "path": "models/opus/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "bytes": 1305
+    },
+    {
+      "path": "models/opus/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/agent_contract.py",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "bytes": 1954
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/api_usage.py",
+      "sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "bytes": 8216
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/best_accepted.py",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "bytes": 5699
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/dispatch_reuse.py",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "bytes": 2115
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/distribution.py",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "bytes": 12937
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/extensions.py",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "bytes": 4380
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/multi_agent.py",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "bytes": 26175
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/planning.py",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "bytes": 36192
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/policy.py",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "bytes": 2585
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/procedure_graph.py",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "bytes": 11077
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/providers.py",
+      "sha256": "a67129e970fb50b9bffdd5736028495302dc25b1616ee7dff1536266b78f3222",
+      "bytes": 18659
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/recovery.py",
+      "sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "bytes": 14924
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/reporting.py",
+      "sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "bytes": 5633
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/scenario_core.py",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "bytes": 5360
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/simulator.py",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "bytes": 86
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/single_agent.py",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "bytes": 12994
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/engine/transmission.py",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "bytes": 47174
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/model.json",
+      "sha256": "4aa2e6d1c1bc994e9ada4a98861e1bb7d79c2e9fc57ed26c8a7bc9153a92641c",
+      "bytes": 179
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "bytes": 1305
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "models/opus/runtime_baseline2023/run.py",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "bytes": 5229
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/agent_contract.py",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "bytes": 1954
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/api_usage.py",
+      "sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "bytes": 8216
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/best_accepted.py",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "bytes": 5699
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/dispatch_reuse.py",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "bytes": 2115
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/distribution.py",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "bytes": 12937
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/extensions.py",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "bytes": 4380
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/multi_agent.py",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "bytes": 26175
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/planning.py",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "bytes": 36192
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/policy.py",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "bytes": 2585
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/procedure_graph.py",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "bytes": 11077
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/providers.py",
+      "sha256": "28748e74c22e6174ac130f6572fe2f03e07fbac82b2971d6d61c699a35e40e22",
+      "bytes": 19182
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/recovery.py",
+      "sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "bytes": 14924
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/reporting.py",
+      "sha256": "cb94310e542d04114babb5e01f6192b137a13672182f0a1d48f58c05d5bba5af",
+      "bytes": 7407
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/scenario_core.py",
+      "sha256": "e836f787f1fc3b3ec2f36e1036cdb8d3eb343ce3c0ab9804c179306240ceb899",
+      "bytes": 8498
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/simulator.py",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "bytes": 86
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/single_agent.py",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "bytes": 12994
+    },
+    {
+      "path": "models/opus/runtime_calendar/engine/transmission.py",
+      "sha256": "5e0d832e484c342d0ae4e480154333ec6ebee0ed83427c3ad8022341dca87bb0",
+      "bytes": 49575
+    },
+    {
+      "path": "models/opus/runtime_calendar/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "bytes": 1305
+    },
+    {
+      "path": "models/opus/runtime_calendar/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "models/opus/runtime_calendar/run.py",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "bytes": 5229
+    },
+    {
+      "path": "models/opus/runtime_origin.json",
+      "sha256": "6ac7d3ca4e9768c82e94a34600699da55ae060733f7079f730156e99a54a83af",
+      "bytes": 9094
+    },
+    {
+      "path": "models/opus/runtime_original/engine/agent_contract.py",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "bytes": 1954
+    },
+    {
+      "path": "models/opus/runtime_original/engine/api_usage.py",
+      "sha256": "27793a0ca4d91192805f258be9f5b87992d6a7648ed507a93ee522d532b9a674",
+      "bytes": 8216
+    },
+    {
+      "path": "models/opus/runtime_original/engine/best_accepted.py",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "bytes": 5699
+    },
+    {
+      "path": "models/opus/runtime_original/engine/dispatch_reuse.py",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "bytes": 2115
+    },
+    {
+      "path": "models/opus/runtime_original/engine/distribution.py",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "bytes": 12937
+    },
+    {
+      "path": "models/opus/runtime_original/engine/extensions.py",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "bytes": 4380
+    },
+    {
+      "path": "models/opus/runtime_original/engine/multi_agent.py",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "bytes": 26175
+    },
+    {
+      "path": "models/opus/runtime_original/engine/planning.py",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "bytes": 36192
+    },
+    {
+      "path": "models/opus/runtime_original/engine/policy.py",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "bytes": 2585
+    },
+    {
+      "path": "models/opus/runtime_original/engine/procedure_graph.py",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "bytes": 11077
+    },
+    {
+      "path": "models/opus/runtime_original/engine/providers.py",
+      "sha256": "28748e74c22e6174ac130f6572fe2f03e07fbac82b2971d6d61c699a35e40e22",
+      "bytes": 19182
+    },
+    {
+      "path": "models/opus/runtime_original/engine/recovery.py",
+      "sha256": "18294de4a23dc7a63daca747be879a8bc0b816ec30401faffcd66f96a1a99398",
+      "bytes": 14924
+    },
+    {
+      "path": "models/opus/runtime_original/engine/reporting.py",
+      "sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "bytes": 5633
+    },
+    {
+      "path": "models/opus/runtime_original/engine/scenario_core.py",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "bytes": 5360
+    },
+    {
+      "path": "models/opus/runtime_original/engine/simulator.py",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "bytes": 86
+    },
+    {
+      "path": "models/opus/runtime_original/engine/single_agent.py",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "bytes": 12994
+    },
+    {
+      "path": "models/opus/runtime_original/engine/transmission.py",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "bytes": 47174
+    },
+    {
+      "path": "models/opus/runtime_original/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "bytes": 1305
+    },
+    {
+      "path": "models/opus/runtime_original/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "models/opus/runtime_original/run.py",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "bytes": 5229
+    },
+    {
+      "path": "models/sol/README.md",
+      "sha256": "46667b2aa3604814776c11753278da4de9116c511f1099789e5a7ce0c00619d6",
+      "bytes": 1673
+    },
+    {
+      "path": "models/sol/adapters/history_resume.py",
+      "sha256": "956a080cc8982115a1745e03c35b7dfa50e33db1296663ae17fa7dc51caa400b",
+      "bytes": 11885
+    },
+    {
+      "path": "models/sol/adapters/request_retry.py",
+      "sha256": "85c588177dc1357a2b232c4bf432c8c6e2684e987e2f9dba091cb6aeb016dba2",
+      "bytes": 9044
+    },
+    {
+      "path": "models/sol/adapters/sa_history_resume.py",
+      "sha256": "79440d1d7076df1874f7460ece13b5a8e41d6757530ce4f817d33a54b04bf0e2",
+      "bytes": 12812
+    },
+    {
+      "path": "models/sol/campaign_source/check_api.py",
+      "sha256": "4e30853327c8c332a91d91827228fcd8113a9cda0fe79d0f161bc7dfae79f854",
+      "bytes": 6114
+    },
+    {
+      "path": "models/sol/campaign_source/preflight.py",
+      "sha256": "85cbab01889c4e01ccf0fc5b60e8030cbea0832b064dfaaa8963fea55a9c940e",
+      "bytes": 16226
+    },
+    {
+      "path": "models/sol/campaign_source/run_campaign.py",
+      "sha256": "ecfece65e9a5216101902d49917cfb2fa563267ed60830091fbc9c67a9fbf44a",
+      "bytes": 19786
+    },
+    {
+      "path": "models/sol/campaign_source/worker.py",
+      "sha256": "9d5bc607f7281a40a27bd9c6beae4cd98cd66b832dba853a4a1a27b19016535b",
+      "bytes": 10198
+    },
+    {
+      "path": "models/sol/climate_adapter.py",
+      "sha256": "8e19661415ca7b1b7e8b518bb9967d839cb701fcf2e6159fd92ffba4f53962d5",
+      "bytes": 7720
+    },
+    {
+      "path": "models/sol/model.json",
+      "sha256": "b1d548ce57512adaad83f63370911728a0aa57c251f1aa7c5b5cc665004b706f",
+      "bytes": 163
+    },
+    {
+      "path": "models/sol/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "bytes": 1305
+    },
+    {
+      "path": "models/sol/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/agent_contract.py",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "bytes": 1954
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/api_usage.py",
+      "sha256": "4c41740ada9b51a3b7db649e0a932f6321400a004c2f36a13bc296899cb311bf",
+      "bytes": 8465
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/best_accepted.py",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "bytes": 5699
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/dispatch_reuse.py",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "bytes": 2115
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/distribution.py",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "bytes": 12937
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/extensions.py",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "bytes": 4380
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/multi_agent.py",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "bytes": 26175
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/planning.py",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "bytes": 36192
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/policy.py",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "bytes": 2585
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/procedure_graph.py",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "bytes": 11077
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/providers.py",
+      "sha256": "b0a8f2e30075693edec08a792d33e2671863d75fd645f6f466a50383e7a5dc2c",
+      "bytes": 13303
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/recovery.py",
+      "sha256": "7f8d19e35a827ad0f1973d4fb8f7e6ae2cf2069454e0706de0f756f77f32e1ac",
+      "bytes": 11839
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/reporting.py",
+      "sha256": "cb94310e542d04114babb5e01f6192b137a13672182f0a1d48f58c05d5bba5af",
+      "bytes": 7407
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/scenario_core.py",
+      "sha256": "e836f787f1fc3b3ec2f36e1036cdb8d3eb343ce3c0ab9804c179306240ceb899",
+      "bytes": 8498
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/simulator.py",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "bytes": 86
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/single_agent.py",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "bytes": 12994
+    },
+    {
+      "path": "models/sol/runtime_calendar/engine/transmission.py",
+      "sha256": "5e0d832e484c342d0ae4e480154333ec6ebee0ed83427c3ad8022341dca87bb0",
+      "bytes": 49575
+    },
+    {
+      "path": "models/sol/runtime_calendar/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "bytes": 1305
+    },
+    {
+      "path": "models/sol/runtime_calendar/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "models/sol/runtime_calendar/run.py",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "bytes": 5229
+    },
+    {
+      "path": "models/sol/runtime_origin.json",
+      "sha256": "85ece46104468a8ed22eb40845043091a6c08f705efc55ef28f69d3a1aec4c4b",
+      "bytes": 6136
+    },
+    {
+      "path": "models/sol/runtime_original/engine/agent_contract.py",
+      "sha256": "cc90217c942f6a0044903f38dfa469fcf92f7d7f36bdb2d5f418aaf3052168da",
+      "bytes": 1954
+    },
+    {
+      "path": "models/sol/runtime_original/engine/api_usage.py",
+      "sha256": "4c41740ada9b51a3b7db649e0a932f6321400a004c2f36a13bc296899cb311bf",
+      "bytes": 8465
+    },
+    {
+      "path": "models/sol/runtime_original/engine/best_accepted.py",
+      "sha256": "879f0d174a5a62c71c446f06d634731ca69ca5602f17d39af276b1aadbc748b0",
+      "bytes": 5699
+    },
+    {
+      "path": "models/sol/runtime_original/engine/dispatch_reuse.py",
+      "sha256": "b66b3f34b20827e14f208bdd511018df735ed87c2cbd3e790f1d0dd657be9a32",
+      "bytes": 2115
+    },
+    {
+      "path": "models/sol/runtime_original/engine/distribution.py",
+      "sha256": "95439533352e7a85482cee6598d79f088d74b796bd8ffdf92ed7fa1bf57f6a17",
+      "bytes": 12937
+    },
+    {
+      "path": "models/sol/runtime_original/engine/extensions.py",
+      "sha256": "a6e8fd1a8dd20b4d2b1a6f7b82cd92b477f041f310efd64a9b0bcbb003b3029e",
+      "bytes": 4380
+    },
+    {
+      "path": "models/sol/runtime_original/engine/multi_agent.py",
+      "sha256": "d820feb35995d5a58da27a06d59dc187e3785a8a3f22c46cf2213f9beaa9b77c",
+      "bytes": 26175
+    },
+    {
+      "path": "models/sol/runtime_original/engine/planning.py",
+      "sha256": "cda35b026387024e438c0e604bc3cc31dd4d319657acd1fb4cad5e2f788ac62d",
+      "bytes": 36192
+    },
+    {
+      "path": "models/sol/runtime_original/engine/policy.py",
+      "sha256": "71e04fbf5769639bd6782b4bcb796479b832ba55ef86638b0bac567256642e22",
+      "bytes": 2585
+    },
+    {
+      "path": "models/sol/runtime_original/engine/procedure_graph.py",
+      "sha256": "51016ed583278279f3646c67cc4d0908de9d50bf2fd27d6b6d6e9568eef16788",
+      "bytes": 11077
+    },
+    {
+      "path": "models/sol/runtime_original/engine/providers.py",
+      "sha256": "b0a8f2e30075693edec08a792d33e2671863d75fd645f6f466a50383e7a5dc2c",
+      "bytes": 13303
+    },
+    {
+      "path": "models/sol/runtime_original/engine/recovery.py",
+      "sha256": "7f8d19e35a827ad0f1973d4fb8f7e6ae2cf2069454e0706de0f756f77f32e1ac",
+      "bytes": 11839
+    },
+    {
+      "path": "models/sol/runtime_original/engine/reporting.py",
+      "sha256": "b0f2d4ac40dac68c110dfbf235d62c7d9f8d88a0a5438996fa0f6db5d1551320",
+      "bytes": 5633
+    },
+    {
+      "path": "models/sol/runtime_original/engine/scenario_core.py",
+      "sha256": "30336bbbac598eede9404da2ad6b117148134ad2025a4e1019d2c6485326b716",
+      "bytes": 5360
+    },
+    {
+      "path": "models/sol/runtime_original/engine/simulator.py",
+      "sha256": "66085d8fe4ae0357b4a2c8ffd18f930a0a39df2b6c99e51e22e859857b337df8",
+      "bytes": 86
+    },
+    {
+      "path": "models/sol/runtime_original/engine/single_agent.py",
+      "sha256": "d3bf92532c9007cdf81a48731613bbf6357a5f8fed0c987a56a6ee9b0b132420",
+      "bytes": 12994
+    },
+    {
+      "path": "models/sol/runtime_original/engine/transmission.py",
+      "sha256": "351ff15abd4292a4044fc737b3a488a55bce10ef4c7e5067dd6471fffe1c667c",
+      "bytes": 47174
+    },
+    {
+      "path": "models/sol/runtime_original/requirements.lock.txt",
+      "sha256": "b3721c5381cbf692d2ead2dca5a1a29c40de548f4e217897afa13e7029425ec0",
+      "bytes": 1305
+    },
+    {
+      "path": "models/sol/runtime_original/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "models/sol/runtime_original/run.py",
+      "sha256": "3b8eb95181d025e3fbfcaf76ca65fe3dfd40b23baa1fe080260ce701d0d791e7",
+      "bytes": 5229
+    },
+    {
+      "path": "preprocessing/README.md",
+      "sha256": "b84dbb50d62cc02c18906477db7ecaff7b6764643f942ba1f3016e808673d898",
+      "bytes": 3305
+    },
+    {
+      "path": "preprocessing/experiment/scripts/annual_row.py",
+      "sha256": "d66c3220ef4f296a8ecb3680a3ebba4fdd906627475d32ced4589a8187e2869d",
+      "bytes": 1196
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_country_pack.py",
+      "sha256": "71e25e21bbd988ae502acd6e71c7dd11defeb493645804465f80dbc24f68454e",
+      "bytes": 48528
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_inputs.py",
+      "sha256": "95c941994df8131ef7638081a96f83ac0c862da71c1041c24a84788b86a9b5a5",
+      "bytes": 18168
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_weather.py",
+      "sha256": "621aaf47a68af7767bd2eeb7c5cd9210c7079695bb1065cd7597e43c3c0ab422",
+      "bytes": 4610
+    },
+    {
+      "path": "preprocessing/experiment/scripts/build_zonal_network.py",
+      "sha256": "f9bda199752dea1fb0cf1c9017082d4f7bd6ba85824f37b676a5ea8661c052b9",
+      "bytes": 33243
+    },
+    {
+      "path": "preprocessing/experiment/scripts/calibrate_feeders.py",
+      "sha256": "d59cc18ffd58895946580bac3c71fe195cbcced1ffcab1bc169fe653cf7dbaba",
+      "bytes": 2842
+    },
+    {
+      "path": "preprocessing/experiment/scripts/fetch_cenace_demand.py",
+      "sha256": "ab536a35cc8c640246e09d6d157f0f5c44c216e9741620fdaa7ab9182f98a422",
+      "bytes": 3769
+    },
+    {
+      "path": "preprocessing/experiment/scripts/verify_inputs.py",
+      "sha256": "1872a4a40c4ddf7d53392529077147e93a87deeeed28d8d55f1815e4aca3454c",
+      "bytes": 1927
+    },
+    {
+      "path": "preprocessing/nasa_climate/README.md",
+      "sha256": "b833bb4cef16d4b214bd0c019e3e8da7e84608c4d3ac766574e68065fff4b3a3",
+      "bytes": 4168
+    },
+    {
+      "path": "preprocessing/nasa_climate/_paths.py",
+      "sha256": "bc04421d947755899b9754f5e88e9e9f653601b20fed538e691804163879e8c4",
+      "bytes": 2132
+    },
+    {
+      "path": "preprocessing/nasa_climate/audit_outputs.py",
+      "sha256": "3c62eb00512f2db7b086b24b97af991c0d0b9d50fb92fb3c1ea4c458916d312d",
+      "bytes": 28965
+    },
+    {
+      "path": "preprocessing/nasa_climate/build_hourly.py",
+      "sha256": "7ee15a224adf519faaf3f232671a456a3aa0f6a7090128d20b2af41e9fbb7a73",
+      "bytes": 29616
+    },
+    {
+      "path": "preprocessing/nasa_climate/build_packs.py",
+      "sha256": "ec08c0b70d9dae2f12a08d78fdcc8384f54923d7a175b00e8e2ff700088c13e4",
+      "bytes": 24118
+    },
+    {
+      "path": "preprocessing/nasa_climate/download_nasa.py",
+      "sha256": "739d40c6b42f13736f578c676f1abba0498ed3084bfdd16b75716a5a5bb8c588",
+      "bytes": 13692
+    },
+    {
+      "path": "preprocessing/nasa_climate/requirements.txt",
+      "sha256": "13179f06bc8620e93f5da9a142c20f5dbc7695204c382025211574bb4e452d23",
+      "bytes": 195
+    },
+    {
+      "path": "preprocessing/prediction/__init__.py",
+      "sha256": "c2faa124ed273fefb58bbd8d21de25e6ab60888dc197ee55cfc0a740588ee4c1",
+      "bytes": 73
+    },
+    {
+      "path": "preprocessing/prediction/run.py",
+      "sha256": "af94d4df79979da06997c06897ae7c49f5776401c2278b4f035da35f7111e729",
+      "bytes": 1070
+    },
+    {
+      "path": "preprocessing/prediction/scenarios.py",
+      "sha256": "11e62323650aa7aaf00eed77b2d63045a2ec388f5054eb9db484d2efe244ffc3",
+      "bytes": 11675
+    },
+    {
+      "path": "preprocessing/prediction_local/prepare_all.py",
+      "sha256": "6cabfbbaa616bd62c4679ec8401834fa8658b7738a4b8605ca44e0d32abf5d09",
+      "bytes": 17773
+    },
+    {
+      "path": "preprocessing/prediction_local/prepare_nyiso.py",
+      "sha256": "59ef7408505f30e63184a6df138cb200fdd4227bf97d6c6d2107e5d1f56232c6",
+      "bytes": 6505
+    },
+    {
+      "path": "preprocessing/prediction_local/verify_all.py",
+      "sha256": "ce242bc7f9b367c011c0c247cb40b0285a96a4bf6c36b3369ac457969802be1d",
+      "bytes": 4155
+    },
+    {
+      "path": "preprocessing/requirements.txt",
+      "sha256": "e86f2f611aa5704d6976fa543c742cd234f2682fb4913611b4ea286b5929e5a3",
+      "bytes": 361
+    },
+    {
+      "path": "tests/test_analysis.py",
+      "sha256": "5dd520c588995f7e4d5ba2d01f61e2b155dab543371d50a2568885c5fd9e7eff",
+      "bytes": 7027
+    },
+    {
+      "path": "tests/test_carbon_release.py",
+      "sha256": "7d85f49800c65da0cd885dbf264a5d386d7136e357ce6e8b16979bf58d1ffc2d",
+      "bytes": 2037
+    },
+    {
+      "path": "tests/test_check_release.py",
+      "sha256": "786ac081254ae40a711478d2b788742fdb73ed800020ba83c4bc52dbac60e90a",
+      "bytes": 5446
+    },
+    {
+      "path": "tests/test_co2_adapter.py",
+      "sha256": "d4f62831567d14ea752f63791da84b85252f8a949d3edff0d166451ded756f1a",
+      "bytes": 9236
+    },
+    {
+      "path": "tests/test_nasa.py",
+      "sha256": "9d21bcca41aae6312750993817ba81f58cb23c585c68ed871ad938a33a5c521c",
+      "bytes": 6099
+    },
+    {
+      "path": "tests/test_run_case.py",
+      "sha256": "df380b83cba59ec3b7d25c4026261e6248458b9511ec499ba279e6cf35e57913",
+      "bytes": 10612
+    },
+    {
+      "path": "tools/check_release.py",
+      "sha256": "5bc5bbeb0d6d7e62a561aaf216d7c2d73ca57264cf0b510943528be0e08f6222",
+      "bytes": 11593
+    },
+    {
+      "path": "tools/run_campaign.py",
+      "sha256": "da9c5f19732d6d7d2448b6025b568842a5fe23bfe56e021c515495484cf84523",
+      "bytes": 6836
+    },
+    {
+      "path": "tools/run_case.py",
+      "sha256": "2520b6e7d65e84402113ab2e595c8479ac20c9634c1c5201fb8309eebc67fc58",
+      "bytes": 23507
+    },
+    {
+      "path": "tools/serve_qwen.py",
+      "sha256": "03df21d36b6763d2fd0dc82aa00d80e9f2995b2118d493b6a0dd068191cb32ea",
+      "bytes": 2611
+    },
+    {
+      "path": "tools/update_release_manifest.py",
+      "sha256": "1092821dd2640c50d149095d7c275c42f084df225ddae6a9ec5120afecc970bd",
+      "bytes": 987
+    },
+    {
+      "path": "tools/verify_research.py",
+      "sha256": "0959c1773288996b277808cd8a8520aa157a998fdbcbcdd788ecd4d7dc56f5f4",
+      "bytes": 1607
+    }
+  ]
+}

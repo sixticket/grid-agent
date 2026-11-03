@@ -1,0 +1,25 @@
+\documentclass[10pt]{letter}
+\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage{hyperref}
+\setlength{\parskip}{0.6em}
+\linespread{1.04}
+\begin{document}
+\begin{letter}{The Editors\\\textit{Nature}}
+\opening{Dear Editors,}
+
+We present \textit{``Autonomous agents for electricity-system planning''} for consideration as an Article in \textit{Nature}.
+
+Planning electricity infrastructure requires a sequence of decisions that connect future demand, regional resources, investment and electrical constraints. Our framework makes this process executable and auditable. Language-model agents revise design bounds and interventions. Resource models, annual investment and dispatch in PyPSA, and distribution simulation in OpenDSS determine their consequences. A fixed numerical gate controls acceptance independently of the agents' narrative judgements.
+
+The evaluation contains 96 annual trajectories across eight electricity systems in six countries and 58 model zones. It spans high-income and upper-middle-income settings, three demand/weather years, two model deployments and single- and multi-agent architectures. Thirty-two trajectories use 2023 demand and ERA5 weather; sixty-four pair 2030 or 2035 demand with matching-year resources reconstructed from NASA daily climate projections. All 96 retain an accepted candidate. Twenty-eight initial candidates fail distribution screening and subsequently yield accepted designs across four systems. Geographic figures expose the regional portfolios, and an ERCOT sequence traces feeder violations through revised investment and operation to numerical acceptance.
+
+The scientific focus is the shared planning and verification process across regional contexts. We additionally compare technology-specific capacities with archived expert plans for Australia, Brazil, South Africa and New Zealand, retaining year, category and scenario differences explicitly. These comparisons reveal substantial portfolio divergences and the consequences of inherited-fleet, policy and technology assumptions.
+
+The framework connects adaptive experimental decisions with several numerical models while preserving source mappings, dispatch evidence, accepted candidates and execution settings. The framework operates on prepared regional packs and configured simulator interfaces, couples single-period investment and annual dispatch with reduced representative feeders, and evaluates future scenarios using one declared climate realization. These choices define a common executable planning environment across eight systems.
+
+We believe this work is relevant to readers studying how AI-assisted reasoning can participate in consequential infrastructure analysis while remaining accountable to numerical evidence. The manuscript provides complete outcome tables, reproducible extraction and explicit regional assumptions accompanying the numerical evidence.
+
+\closing{Sincerely,}
+\noindent Yoon Pyo Lee, Souvik Chakraborty and Syed Bahauddin Alam
+\end{letter}
+\end{document}

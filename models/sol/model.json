@@ -1,0 +1,8 @@
+{
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "effort": "high",
+  "service_tier": "default",
+  "api_key_env": "OPENAI_API_KEY",
+  "output_tokens": 64000
+}
